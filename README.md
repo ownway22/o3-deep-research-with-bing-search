@@ -251,8 +251,8 @@ A: 確保使用支援 UTF-8 編碼的文字編輯器開啟 Markdown 檔案（如
 
 ### 官方文件
 
-- [Azure AI Foundry - Web Search 整合指南](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/web-search?view=foundry-classic)
-- [Azure AI Foundry - Deep Research 最佳實踐](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deep-research?view=foundry-classic#best-practices)
+- [Web search with the Responses API - Microsoft Foundry | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/web-search?view=foundry-classic)
+- [Deep research with the Responses API - Microsoft Foundry | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deep-research?view=foundry-classic#best-practices)
 - [Why we built the Responses API | OpenAI](https://developers.openai.com/blog/responses-api/)
 - [Azure-Samples/deepresearch | Github](https://github.com/Azure-Samples/deepresearch/)
 
