@@ -3,7 +3,7 @@ name = "o3-deep-research-with-bing-search"
 version = "0.1.0"
 description = "O3 Deep Research with Bing Search using Azure OpenAI"
 authors = [
-    {name = "Yu-Hong Lin", email = "your.email@example.com"}
+    {name = "Yu-Hong Lin", email = "yu-hong.lin@microsoft.com"}
 ]
 requires-python = ">=3.8"
 dependencies = [
