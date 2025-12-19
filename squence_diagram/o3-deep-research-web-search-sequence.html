@@ -1,0 +1,312 @@
+<!DOCTYPE html><html><head>
+      <title>o3-deep-research-web-search-sequence</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Yu-Hong Lin\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\Yu-Hong Lin\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="o3-deep-research-with-web-search---sequence-diagram">O3-Deep-Research with Web Search - Sequence Diagram </h1>
+<p>本文檔展示使用者呼叫 o3-deep-research 模型並啟用 web search 功能後的完整互動流程。</p>
+<h2 id="系統架構說明">系統架構說明 </h2>
+<p>O3-Deep-Research 是一個進階研究模型，能夠：</p>
+<ul>
+<li>執行多步驟推理 (multi-step reasoning)</li>
+<li>進行網頁搜尋 (web search)</li>
+<li>瀏覽和分析數百個來源</li>
+<li>生成具有引用的綜合報告</li>
+</ul>
+<p>當啟用 Web Search 時，模型會透過 Grounding with Bing Search 取得即時資訊並提供內嵌引用。</p>
+<h2 id="完整互動流程圖">完整互動流程圖 </h2>
+<div class="mermaid">sequenceDiagram
+    participant User as 使用者
+    participant Python as Python 應用程式
+    participant API as Azure OpenAI&lt;br/&gt;Responses API
+    participant Model as o3-deep-research&lt;br/&gt;Model
+    participant WebSearch as Web Search Tool&lt;br/&gt;(Bing Grounding)
+    participant Webhook as Webhook Endpoint&lt;br/&gt;(Optional)
+
+    %% 階段 1: 請求初始化
+    Note over User,Webhook: 階段 1: 請求初始化與配置
+    User-&gt;&gt;Python: 提交研究查詢
+    
+    Python-&gt;&gt;API: POST /openai/v1/responses
+    Note right of API: 請求參數:&lt;br/&gt;- model: "o3-deep-research"&lt;br/&gt;- background: true&lt;br/&gt;- tools: [web_search_preview]&lt;br/&gt;- webhook: (可選)&lt;br/&gt;- max_tool_calls: (可選)
+    
+    API-&gt;&gt;Model: 初始化深度研究任務
+    API--&gt;&gt;Python: 返回 202 Accepted&lt;br/&gt;(background mode)
+    Python--&gt;&gt;User: 顯示「研究進行中」狀態
+
+    %% 階段 2: 多步驟研究執行
+    Note over Model,WebSearch: 階段 2: 多步驟推理與資料收集
+    
+    loop 多步驟推理循環
+        Model-&gt;&gt;Model: 分析查詢，規劃搜尋策略
+        
+        %% Web Search 呼叫
+        Model-&gt;&gt;WebSearch: 執行 web_search_call&lt;br/&gt;action: "search"&lt;br/&gt;query: "優化的搜尋查詢"
+        Note right of WebSearch: 可選參數:&lt;br/&gt;- user_location.country&lt;br/&gt;- sources (限定域名)
+        
+        WebSearch-&gt;&gt;WebSearch: 透過 Bing Grounding&lt;br/&gt;執行網頁搜尋
+        WebSearch--&gt;&gt;Model: 返回搜尋結果&lt;br/&gt;(URL, title, snippets)
+        
+        %% Deep Research 特有: 開啟頁面
+        Model-&gt;&gt;WebSearch: (Deep Research)&lt;br/&gt;action: "open_page"&lt;br/&gt;開啟特定頁面
+        WebSearch--&gt;&gt;Model: 返回頁面內容
+        
+        Model-&gt;&gt;WebSearch: (Deep Research)&lt;br/&gt;action: "find_in_page"&lt;br/&gt;在頁面中搜尋特定資訊
+        WebSearch--&gt;&gt;Model: 返回匹配的內容片段
+        
+        Model-&gt;&gt;Model: 綜合分析所有來源&lt;br/&gt;判斷是否需要更多資訊
+        
+        alt 需要更多資訊
+            Note over Model: 繼續下一輪搜尋
+        else 資訊充足
+            Note over Model: 結束搜尋，準備生成報告
+        end
+    end
+
+    %% 階段 3: 生成最終報告
+    Note over Model,API: 階段 3: 報告生成與引用標註
+    
+    Model-&gt;&gt;Model: 綜合所有收集的資訊&lt;br/&gt;生成結構化報告&lt;br/&gt;加入內嵌引用 (inline citations)
+    
+    Model-&gt;&gt;API: 返回完整 response
+    Note right of API: Response 結構:&lt;br/&gt;- web_search_call (多個)&lt;br/&gt;- message (final answer)
+
+    %% 階段 4: 結果傳遞
+    Note over API,User: 階段 4: 結果傳遞
+    
+    opt 使用 Webhook
+        API-&gt;&gt;Webhook: POST completion event
+        Webhook-&gt;&gt;Python: 觸發完成處理
+    end
+    
+    alt 輪詢模式
+        Python-&gt;&gt;API: GET /responses/{id}
+        API--&gt;&gt;Python: 返回狀態和結果
+    end
+    
+    API--&gt;&gt;Python: 返回完整 response object
+    Note right of Python: output array 包含:&lt;br/&gt;1. web_search_call 記錄&lt;br/&gt;2. message with annotations
+    
+    Python-&gt;&gt;Python: 解析 response:&lt;br/&gt;- 提取 output_text&lt;br/&gt;- 處理 url_citation annotations&lt;br/&gt;- 格式化引用連結
+    
+    Python--&gt;&gt;User: 顯示研究報告&lt;br/&gt;包含內嵌引用和來源連結
+
+    %% 額外: 錯誤處理
+    Note over User,Webhook: 錯誤處理與安全措施
+    
+    opt 工具呼叫驗證
+        Model-&gt;&gt;API: 提交工具呼叫參數
+        API-&gt;&gt;API: Schema/Regex 驗證&lt;br/&gt;檢查 URL 和參數
+        alt 驗證失敗
+            API--&gt;&gt;Model: 拒絕呼叫
+        else 驗證通過
+            API-&gt;&gt;WebSearch: 轉發請求
+        end
+    end
+    
+    opt 記錄與審計
+        API-&gt;&gt;API: 記錄所有工具呼叫&lt;br/&gt;和模型輸出
+        Note right of API: 用於安全審計和&lt;br/&gt;成本追蹤
+    end
+</div><h2 id="response-結構詳解">Response 結構詳解 </h2>
+<h3 id="1-web-search-call-記錄">1. Web Search Call 記錄 </h3>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"ws_xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"web_search_call"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"completed"</span><span class="token punctuation">,</span>
+    <span class="token property">"action"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"search"</span><span class="token punctuation">,</span>
+        <span class="token property">"query"</span><span class="token operator">:</span> <span class="token string">"優化後的搜尋查詢"</span><span class="token punctuation">,</span>
+        <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"domain1.com"</span><span class="token punctuation">,</span> <span class="token string">"domain2.com"</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>Action Types:</strong></p>
+<ul>
+<li><code>search</code>: 執行網頁搜尋（會產生費用）</li>
+<li><code>open_page</code>: (Deep Research) 開啟特定頁面</li>
+<li><code>find_in_page</code>: (Deep Research) 在頁面中搜尋</li>
+</ul>
+<h3 id="2-final-message-with-citations">2. Final Message with Citations </h3>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"msg_xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"message"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"completed"</span><span class="token punctuation">,</span>
+    <span class="token property">"role"</span><span class="token operator">:</span> <span class="token string">"assistant"</span><span class="token punctuation">,</span>
+    <span class="token property">"content"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"output_text"</span><span class="token punctuation">,</span>
+            <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"研究結果內容..."</span><span class="token punctuation">,</span>
+            <span class="token property">"annotations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"url_citation"</span><span class="token punctuation">,</span>
+                    <span class="token property">"start_index"</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                    <span class="token property">"end_index"</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+                    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://example.com/article"</span><span class="token punctuation">,</span>
+                    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"文章標題"</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="最佳實踐">最佳實踐 </h2>
+<h3 id="1-執行模式">1. 執行模式 </h3>
+<ul>
+<li>✅ <strong>使用 <code>background: true</code></strong> 避免超時</li>
+<li>✅ <strong>配置 webhook</strong> 接收完成通知</li>
+<li>✅ <strong>增加 timeout 設定</strong>（若不使用 background mode）</li>
+</ul>
+<h3 id="2-成本與延遲控制">2. 成本與延遲控制 </h3>
+<ul>
+<li>使用 <code>max_tool_calls</code> 限制工具呼叫次數</li>
+<li>每次 <code>search</code> action 會產生 Bing Grounding 費用</li>
+<li><code>open_page</code> 和 <code>find_in_page</code> 不產生額外搜尋費用</li>
+</ul>
+<h3 id="3-安全措施">3. 安全措施 </h3>
+<ul>
+<li>記錄並審查所有工具呼叫</li>
+<li>使用 schema 或 regex 驗證工具參數</li>
+<li>在開啟或分享前驗證連結</li>
+</ul>
+<h3 id="5-地理位置控制">5. 地理位置控制 </h3>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"tools"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"web_search_preview"</span><span class="token punctuation">,</span>
+        <span class="token property">"user_location"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"approximate"</span><span class="token punctuation">,</span>
+            <span class="token property">"country"</span><span class="token operator">:</span> <span class="token string">"TW"</span>  <span class="token comment">// ISO 3166-1 country code</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="使用場景">使用場景 </h2>
+<h3 id="適合使用-o3-deep-research-的情境">適合使用 O3-Deep-Research 的情境： </h3>
+<ul>
+<li>📚 法律或科學研究</li>
+<li>📊 市場與競爭分析</li>
+<li>📈 基於大量內部或公開資料的報告</li>
+<li>🔍 需要綜合數百個來源的深度調查</li>
+<li>📝 需要完整引用的學術或商業報告</li>
+</ul>
+<h3 id="執行時間考量">執行時間考量： </h3>
+<ul>
+<li><strong>Quick Web Search</strong>: 秒級回應</li>
+<li><strong>Agentic Search</strong>: 分鐘級（適合複雜工作流程）</li>
+<li><strong>Deep Research</strong>: 數分鐘（適合背景執行的完整調查）</li>
+</ul>
+<h2 id="技術規格">技術規格 </h2>
+<h3 id="支援的模型">支援的模型 </h3>
+<ul>
+<li>Web Search (無推理): <code>gpt-4.1</code>, <code>gpt-5</code> 等</li>
+<li>Agentic Search: 推理模型（reasoning models）</li>
+<li>Deep Research: <code>o3-deep-research</code></li>
+</ul>
+<h3 id="api-端點">API 端點 </h3>
+<ul>
+<li><strong>Base URL</strong>: <code>https://{resource-name}.openai.azure.com/openai/v1/</code></li>
+<li><strong>Endpoint</strong>: <code>/responses</code></li>
+<li><strong>Method</strong>: POST</li>
+</ul>
+<h3 id="認證方式">認證方式 </h3>
+<ul>
+<li>Entra ID (Azure AD): <code>Authorization: Bearer $TOKEN</code></li>
+<li>API Key: <code>api-key: $KEY</code></li>
+</ul>
+<h3 id="費用說明">費用說明 </h3>
+<ul>
+<li>每次 <strong>search</strong> action 產生 Bing Grounding 費用</li>
+<li>參考 <a href="https://www.microsoft.com/bing/apis/grounding-pricing">Grounding with Bing 價格</a></li>
+<li>模型使用費用依據 Azure OpenAI 標準定價</li>
+</ul>
+<h2 id="管理功能">管理功能 </h2>
+<p>Azure 管理員可在訂用帳戶層級管理 Web Search 功能：</p>
+<h3 id="停用-web-search">停用 Web Search </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>az feature register <span class="token parameter variable">--name</span> OpenAI.BlockedTools.web_search <span class="token punctuation">\</span>
+  <span class="token parameter variable">--namespace</span> Microsoft.CognitiveServices <span class="token punctuation">\</span>
+  <span class="token parameter variable">--subscription</span> <span class="token string">"&lt;subscription-id&gt;"</span>
+</code></pre><h3 id="啟用-web-search">啟用 Web Search </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>az feature unregister <span class="token parameter variable">--name</span> OpenAI.BlockedTools.web_search <span class="token punctuation">\</span>
+  <span class="token parameter variable">--namespace</span> Microsoft.CognitiveServices <span class="token punctuation">\</span>
+  <span class="token parameter variable">--subscription</span> <span class="token string">"&lt;subscription-id&gt;"</span>
+</code></pre><h2 id="資料隱私與合規性">資料隱私與合規性 </h2>
+<p>⚠️ <strong>重要提醒：</strong></p>
+<ul>
+<li>傳送至 Grounding with Bing Search 的資料會流出客戶的合規性和地理邊界</li>
+<li>Microsoft 資料保護增補條款 (DPA) <strong>不適用</strong>於 Bing Search 的資料</li>
+<li>服務受 <a href="https://www.microsoft.com/bing/apis/grounding-legal-enterprise">Grounding with Bing 使用條款</a> 與 <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Microsoft 隱私權聲明</a> 管轄</li>
+</ul>
+<hr>
+<h2 id="參考資源">參考資源 </h2>
+<ul>
+<li><a href="https://learn.microsoft.com/azure/ai-foundry/openai/how-to/deep-research">Deep Research 官方文件</a></li>
+<li><a href="https://learn.microsoft.com/azure/ai-foundry/openai/how-to/web-search">Web Search 官方文件</a></li>
+<li><a href="https://www.microsoft.com/bing/apis/grounding-pricing">Grounding with Bing 價格</a></li>
+<li><a href="https://learn.microsoft.com/azure/ai-services/openai/reference">Azure OpenAI Responses API</a></li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

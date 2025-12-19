@@ -1,0 +1,977 @@
+[
+  {
+    "timestamp": "2025-12-19T15:13:42.219172",
+    "stage": "Stage 1: Plan Creation",
+    "input_preview": "請針對以下研究內容，列出詳細的研究計畫與搜尋關鍵字清單，不要執行實際的深度搜索。\n\n研究內容：微軟ignite 2025大會的top3議題",
+    "response": {
+      "id": "resp_05c6bada5cd3462a006944fa8335a88197a870fac859395702",
+      "object": "response",
+      "created_at": 1766128259,
+      "status": "completed",
+      "background": false,
+      "content_filters": null,
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": null,
+      "max_tool_calls": 225,
+      "model": "o3-deep-research",
+      "output": [
+        {
+          "id": "rs_05c6bada5cd3462a006944fa8ae3108197a1510e3dee48dfe7",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fab37a9c8197b88e187d87f6cf38",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "Microsoft Ignite 2025 top 3 topic"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fab5727c81979318f98082699730",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fac7c6a48197a902698ce500dcf3",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fac917e48197a076247bd57d55ef",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944faca97a48197a8e3657378e6194c",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "4.",
+            "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944facb2f9481978115943e8b9caf53",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944facb8a548197aec40d9846a97540",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944facc009081979e402752bbad3966",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944faeb9e0c8197be5926be2fc160df",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "\"Book of News\" \"Microsoft Ignite 2025\""
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944faecc04c8197b80f97193a4be7bc",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb0eff2c81978cd73db2608d7b29",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "top five cloud and AI stories",
+            "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb0fc3fc8197a5d882401d3f1d09",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb10c6208197a7ea0886d35b9508",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb11839c81978ea38284f1fc3310",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "msg_05c6bada5cd3462a006944fb11dd3c819794b7ae9940fcd79f",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [
+                {
+                  "type": "url_citation",
+                  "end_index": 805,
+                  "start_index": 637,
+                  "title": "Microsoft Ignite 2025 Recap: Agentic AI, Foundry, and Azure Innovations",
+                  "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=the%20work%20begins,1"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 1562,
+                  "start_index": 1357,
+                  "title": "Microsoft Ignite 2025: Key Announcements & Business Impact",
+                  "url": "https://erpsoftwareblog.com/2025/12/microsoft-ignite-2025-key-announcements/#:~:text=Explore%20Microsoft%20Ignite%202025%20highlights%2C,mean%20for%20modern%20business%20technology"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 2366,
+                  "start_index": 2198,
+                  "title": "Microsoft Ignite 2025 Recap: Agentic AI, Foundry, and Azure Innovations",
+                  "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=the%20work%20begins,1"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3064,
+                  "start_index": 2873,
+                  "title": "Microsoft Ignite 2025 Summary – Level Up M365",
+                  "url": "https://levelupm365.com/2025/11/18/microsoft-ignite-summary/#:~:text=Microsoft%20Ignite%202025%20Summary%20%E2%80%93,to%20announcements%2C%20insights%2C%20and%20resources"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3429,
+                  "start_index": 3223,
+                  "title": "Microsoft Ignite 2025 Recap: Agentic AI, Foundry, and Azure Innovations",
+                  "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=the%20work%20begins,adopting%20new%20AI%20tools%3A%20vendor"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3829,
+                  "start_index": 3598,
+                  "title": "Microsoft Ignite 2025 Recap: Agentic AI, Foundry, and Azure Innovations",
+                  "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=support%20agentic%20cloud%20operations%20at,And%20it%20didn%E2%80%99t%20stop%20there"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 4063,
+                  "start_index": 3830,
+                  "title": "Microsoft Ignite 2025 Recap: Agentic AI, Foundry, and Azure Innovations",
+                  "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=Microsoft%E2%80%99s%20custom%20Azure%20silicon%20now,these%20tools%20and%20build%20new"
+                }
+              ],
+              "logprobs": [],
+              "text": "# 研究計畫\n\n**研究目標：** 瞭解與整理 **Microsoft Ignite 2025** 年度大會的**「Top 3 議題」**，即大會中最受矚目的三大主題或重要發佈內容。這將包括確認大會的主要焦點技術領域，以及各大媒體和官方報導中最常提及的三項關鍵議題。\n\n## 研究步驟\n\n1. **初步瞭解與界定問題：** 首先釐清何謂「Top 3 議題」。這可能指的是 **大會最主要的三個主題**（例如 *AI、雲端、資安* 等），或 **大會期間發表的三項最大亮點或重要技術**。在研究開始前，先確定我們關注的是大會的主要**議程主題**還是**重大發表**。這能幫助我們在搜尋資訊時更有針對性。\n\n2. **尋找官方資訊來源：** 前往 **Microsoft Ignite 2025 大會的官方網站或微軟官方部落格**，蒐集來自官方的第一手資訊：\n   - **大會議程與主題：** 查閱微軟 Ignite 2025 官方網站上的**議程 (agenda)** 或**日程表**，找出大會的主題演講（*keynotes*）和各天的重點討論主題。這些通常代表大會的核心議題。\n   - **官方新聞稿與部落格：** 搜尋微軟官網或 Azure/Tech Community 部落格中是否有 **Microsoft Ignite 2025** 的總結文章或新聞稿。例如，微軟常在大會期間發佈 **“Book of News”** 或部落格文章，整理所有重要公告和主題 ([azure.microsoft.com](https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=the%20work%20begins,1))。這些官方文件可直接提供大會**主要議題**的權威列表和說明。\n   - **微軟高層訪談/講話：** 注意微軟 CEO Satya Nadella、CTO 等在 Ignite 2025 上的**開幕主題演講 (keynote)**內容摘要；這通常揭示大會想強調的**關鍵趨勢**（例如近期幾年常見的 AI、雲端服務等）。\n\n3. **收集次級資料來源：** 除官方資訊外，還需要從技術媒體、部落格和社群中收集對 Ignite 2025 大會的**報導與分析**：\n   - **國際科技媒體報導：** 搜尋國際知名科技新聞網站對 Ignite 2025 的**回顧 (recap)**或**亮點 (highlights)**報導，例如 *TechCrunch*、*The Verge*、*ZDNet*、*CNET* 等。這些文章通常會列出大會期間最重要的幾項發布或趨勢，並提供記者對其重要性的分析。\n   - **技術部落格與專家分析：** 查找技術領域專家的**博客文章**或 *YouTube* 影片，了解他們認為的三大重點議題是什麼。有些技術專家或顧問（如 Microsoft MVP、行業分析師）會分享他們對大會的觀點，例如「Ignite 2025 *Key Takeaways*」之類的內容 ([erpsoftwareblog.com](https://erpsoftwareblog.com/2025/12/microsoft-ignite-2025-key-announcements/#:~:text=Explore%20Microsoft%20Ignite%202025%20highlights%2C,mean%20for%20modern%20business%20technology))。這有助於我們瞭解業界普遍關注的焦點。\n   - **中文科技媒體與社群討論：** 使用中文搜尋引擎（如百度、Google 中文）查詢中文技術媒體（如 *iThome 技術生活*、*TechNews 科技新報*、*36Kr* 等）對 **微軟 Ignite 2025 大會**的報導或討論。他們可能會將國際新聞翻譯或整理，並強調華人技術圈關注的議題。瀏覽相關論壇或社群（如 *PTT 科技板*、*知乎* 等）以了解中文社群討論的**熱門議題**。\n\n4. **制定搜尋策略：** 針對不同來源，利用適當的關鍵字進行網路搜尋。可以**結合中英關鍵字**以獲取更全面的資訊（下面提供詳細關鍵字清單）。採用 **布林搜索**（例如使用 *AND/OR*、引號鎖定精確關鍵詞）以提升搜尋結果的相關性。例如：搜尋 *“Microsoft Ignite 2025 top announcements”* 搭配 *“Microsoft Ignite 2025 highlights”*，或使用中文關鍵字如 *“微軟 Ignite 2025 重點 公布”* 等，以找到可能的相關內容。\n\n5. **篩選與閱讀資料：** 將搜尋結果中與 **Ignite 2025 大會**相關的文章逐一閱讀、整理：\n   - **閱讀官方內容：** 從官方博客文章或新聞資料中，摘錄出明確列出的**重點議題**或**公告**。例如，微軟官方博客或 *News Center* 可能已列出五大重點技術故事 ([azure.microsoft.com](https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=the%20work%20begins,1))；我們可以從中挑選出排名前列的三項。 \n   - **閱讀媒體總結：** 比較多篇不同媒體的“**Ignite 2025 大會重點**”文章。記錄每篇文章提到的重要議題，然後比較各篇文章之間的**共同點**。如果多個來源都提到相似的主題或技術（例如 *AI/Copilot*、*Azure雲服務更新* 等），可以推測這些就是大會 Top 3 議題的有力候選。\n   - **記錄與整理：** 建立一個表格或清單，列出各來源提及的**議題**，統計出出現頻率較高的項目。這將有助於客觀地判斷哪些議題在多數來源中都被列為重點。\n\n6. **分析與確定 Top 3 議題：** 根據收集到的資訊，分析哪些主題最常被提及或強調。優先考慮：\n   - **頻繁出現的主題：** 如果多個權威來源都提到同一議題，極可能是 Top 3 之一。\n   - **創新與影響力：** 評估每個可能的議題在大會上的份量（例如是否由高層在主題演講宣布，是否為全新產品/服務，對業界的影響程度）。\n   - **與大會主題的相關性：** Ignite 2025 大會的總體主旨（例如 2025 年的科技趨勢，**AI 驅動的數位轉型**等 ([levelupm365.com](https://levelupm365.com/2025/11/18/microsoft-ignite-summary/#:~:text=Microsoft%20Ignite%202025%20Summary%20%E2%80%93,to%20announcements%2C%20insights%2C%20and%20resources))）是什麼？確保選出的三大議題與大會主旨高度相關。  \n\n   在這步驟中，可能會發現**人工智慧（AI）與 Copilot 技術**是大會的最大亮點之一，因為許多報導都強調微軟在 Ignite 2025 上展示了新的 AI 模型和 **Agentic AI** 概念，以及 **Copilot** 在各種服務中的擴展 ([azure.microsoft.com](https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=the%20work%20begins,adopting%20new%20AI%20tools%3A%20vendor))。其次，**雲端平台 Azure 的重大更新**（如新的資料庫服務 **Azure HorizonDB**、Azure Copilot 雲端代理等）可能是另一個主要議題。第三個重點議題可能與**資安與硬體創新**有關，例如微軟在 Azure 雲端基礎設施方面的新硬體（如 Azure 專用晶片 *Cobalt 200*）及安全性強化舉措 ([azure.microsoft.com](https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=support%20agentic%20cloud%20operations%20at,And%20it%20didn%E2%80%99t%20stop%20there)) ([azure.microsoft.com](https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=Microsoft%E2%80%99s%20custom%20Azure%20silicon%20now,these%20tools%20and%20build%20new))。這些都是推測的方向，實際的 Top 3 議題須以多方資料交叉驗證後的結論為準。\n\n7. **彙整與呈現結果：** 將確認的三大議題整理成報告或簡報；\n   - 每個議題提供清晰的標題並加上簡要說明，說明其內容及重要性。\n   - 在每個議題下，引述並**註明資料來源**（如官方聲明或媒體報導）來支持其為 Top 3 議題的判斷。\n   - 若是書面報告，可將**參考資料**按照學術格式列出；若是簡報，則可在投影片註腳標示來源。\n   - 確保結論部分點出這三大議題如何反映了當前科技趨勢，以及它們對產業或用戶的意義，以強調研究結果的價值。\n\n## 搜尋關鍵字清單\n\n- **英語關鍵字:**\n  - “**Microsoft Ignite 2025 top announcements**” – 查找國際媒體對 2025 年 Ignite 大會發表**重要消息**的彙總報導。\n  - “**Microsoft Ignite 2025 highlights**” – 搜尋大會**亮點**的相關文章或視頻總結。\n  - “**Microsoft Ignite 2025 key topics**” – 尋找描述 Ignite 2025 **主要議題**或主題趨勢的資訊來源。\n  - “**Microsoft Ignite 2025 Book of News**” – 尋找微軟官方發布的「**新聞手冊**」(Book of News)，其中匯總了大會期間所有重要發表。\n  - “**Microsoft Ignite 2025 AI Copilot Azure**” – 結合大會名稱與特定熱門技術（如 *AI*、*Copilot*、*Azure*）來獲取相關資訊。\n\n- **中文關鍵字:**\n  - “**微軟 Ignite 2025 大會 焦點**” – 尋找中文媒體對 Ignite 2025 大會**焦點議題**的報導。\n  - “**微軟 Ignite 2025 三大議題**” – 使用中文查詢**三大議題**，查看是否有中文分析或論壇討論指出大會的主要話題。\n  - “**微軟 Ignite 2025 新服務 公布**” – 查詢大會期間微軟**發表的新服務或技術**資訊。\n  - “**Ignite 2025 技術 趨勢**” – 搜尋有關 Ignite 2025 涉及的**技術趨勢**（例如人工智慧、雲端服務等）的中文討論。\n  - “**微軟 2025 年 度會議 亮點**” – 擴大搜尋範圍，以確保找到所有與 **2025 年微軟年度大會亮點**相關的中文資料。\n\n上述關鍵字可靈活組合使用。建議在搜尋時嘗試不同的關鍵字組合，並關注搜尋結果中的**官方來源**（如 *Microsoft 官方部落格/新聞稿*）和**可靠的科技媒體**報導。透過有系統的研究計畫和精確的關鍵字搜尋，將有助於找到**微軟 Ignite 2025**大會的**Top 3 議題**並進行深入分析。"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": null,
+      "reasoning": {
+        "effort": "medium",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": true,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tools": [
+        {
+          "type": "code_interpreter",
+          "container": {
+            "type": "auto"
+          }
+        },
+        {
+          "type": "web_search_preview",
+          "search_context_size": "medium",
+          "user_location": null
+        }
+      ],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 22149,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 19195,
+        "output_tokens_details": {
+          "reasoning_tokens": 16576
+        },
+        "total_tokens": 41344
+      },
+      "user": null,
+      "metadata": {}
+    }
+  },
+  {
+    "timestamp": "2025-12-19T15:18:21.023141",
+    "stage": "Stage 2: Deep Research",
+    "input_preview": "微軟ignite 2025大會的top3議題",
+    "response": {
+      "id": "resp_05c6bada5cd3462a006944fb3609c08197831a0ab651db0e29",
+      "object": "response",
+      "created_at": 1766128438,
+      "status": "completed",
+      "background": true,
+      "content_filters": null,
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": null,
+      "max_tool_calls": 225,
+      "model": "o3-deep-research",
+      "output": [
+        {
+          "id": "ws_05c6bada5cd3462a006944fb4705a08197ba3eab20862494f1",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "微軟 ignite 2025 大會 top 3 議題"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb47e99881978b60311b437a73a9",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb64e4d481979c6785dabf2e81aa",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://tw.news.yahoo.com/microsoft-ignite-2025-copilot-evolves-again-introduces-work-iq-and-agent-mode-and-integrates-gpt-5-and-sora-2-130418703.html"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb65fdc48197b3dd1aff1fb5c971",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb69d3e0819782915107acf7cbbd",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "top 3 announcements Microsoft Ignite 2025 summary"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb6c38d08197b973527363702e03",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb6e4f288197bd9c207e12bb8031",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.pangshare.com/microsoft-ignite-2025-features/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb6fae2c8197804fa73cf52458f7",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb74e8d88197a0898a8a5e9cb4c4",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb7610f08197831c65c5a718d52a",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb7992f4819794e2990d66f2e165",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb7aaaf88197bb1d8ea8ebe1448d",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb80c3cc819783e5204efc4d1c6b",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb81f794819795c33aafa770b0a5",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb83efd081979ab369819b57ba60",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "五、",
+            "url": "https://www.pangshare.com/microsoft-ignite-2025-features/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb84bb00819780040f40a382a1b3",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb8563f08197bba111f082d6bcb5",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": null
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb8606848197b2671d3853bdf784",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb8735bc8197b1d387c94a71648c",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "HorizonDB",
+            "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb87f0588197b8a2c0a467dc62bb",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb8d0bd48197ae8d1db56ba1e192",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://techcabal.com/2025/11/20/5-key-announcements-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb8e489c8197ba9cf06f07437e42",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb8e7db881979668d41e0f609c7d",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Announcement 4:",
+            "url": "https://techcabal.com/2025/11/20/5-key-announcements-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb8ef3908197a319ee6ee1e66d1d",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb9010748197b7e145b861eead92",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Announcement 5:",
+            "url": "https://techcabal.com/2025/11/20/5-key-announcements-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb90d37c8197b209dd0ef02d89e1",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb979e408197b049e53e2c85a19b",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.stufftaiwan.com/2025/11/20/%E8%BF%8E%E6%8E%A5-ai-%E6%A0%B8%E5%BF%83%E6%99%82%E4%BB%A3%EF%BC%81microsoft-ignite-2025-%E9%87%8D%E7%A3%85%E7%99%BC%E5%B8%83-work-iq%E3%80%81agent-365%EF%BC%8C%E8%B3%A6%E8%83%BD%E4%BC%81%E6%A5%AD/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb98e8c481979a69e8bf3d0e94f4",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fb9e36f48197b8ce9438830c0ff6",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://convverge.com/blog/news-and-announcements/microsoft-ignite-2025-key-takeaways/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fb9f72e88197a0fa2dbe93482e4f",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fba02174819794126423458ac182",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "3. ",
+            "url": "https://convverge.com/blog/news-and-announcements/microsoft-ignite-2025-key-takeaways/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fba0e38c8197b39d8b447b321cd6",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fba1bc108197a7ce98df2ae5bdb7",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "4. Work IQ",
+            "url": "https://convverge.com/blog/news-and-announcements/microsoft-ignite-2025-key-takeaways/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fba27fbc8197b0522d9faa36eb08",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fba2e7d48197925cfc30042dfd64",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Copilot",
+            "url": "https://convverge.com/blog/news-and-announcements/microsoft-ignite-2025-key-takeaways/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fba391148197b3029fb6603f6eed",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fba4b1048197bb58071c8d820e7d",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "6. ",
+            "url": "https://convverge.com/blog/news-and-announcements/microsoft-ignite-2025-key-takeaways/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fba58b1c819798e86ccab413932a",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbac38648197889bc4f9de062bac",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "HorizonDB",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbacfb548197ba587fd56d6d8f97",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbbb846481978d3434bbe054098d",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://cybersecurenews.com.tw/industry-news-592/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbbcdb0c819783dfed0c090a4499",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbc3baa88197903cd9b556315a50",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "以下",
+            "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbc483bc8197984d51343cf4b745",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbc571b88197b889e48529659d7c",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "創新與",
+            "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbc63418819793cdf70d8c8a0fab",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbc6d5d0819796a896ec48711d3f",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Agent 365",
+            "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbc774c08197b1b0f6b32efca648",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbd373fc81978a4a44aa2d64ccc4",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "Microsoft Ignite 2025 three key highlights"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbd4d0388197a23fe0b3ea05e782",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbda351c819797a0d1799b5b1df0",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.isystems-group.com/blog/2025/12/04/microsoft-ignite-2025-what-are-the-essential-takeaways-after-this-years-leading-technology-and-innovation-event-part-1/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbdb80248197afd77669348ab6af",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbe49a088197b4feb5b969100992",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "微軟 Ignite 2025 新 服務 公布 最重要"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbe5e65c8197a73e49bb03c75953",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbeb2c208197be50e65a8ae99701",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbec7f648197aa93eea1aa3dc51d",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbf0f6d08197a8d9728d2644619d",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "HorizonDB",
+            "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbf1cb9081978d7090133c6ff701",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fbf4552881979c13605ec7c5063c",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Cobalt 200",
+            "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fbf5214c8197ab3be94dbe282b9e",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fc065c7c8197b112686f36a651b8",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Horizon",
+            "url": "https://www.pangshare.com/microsoft-ignite-2025-features/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fc0750d48197bbc4059b452c686e",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fc224a14819794bbd05fe12e78bf",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Foundry",
+            "url": "https://www.pangshare.com/microsoft-ignite-2025-features/"
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fc233d80819783980cc08e92dc6c",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_05c6bada5cd3462a006944fc26d9708197b7a4bec537ffb5bc",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": null
+          }
+        },
+        {
+          "id": "rs_05c6bada5cd3462a006944fc27ce188197817645659294ee11",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "msg_05c6bada5cd3462a006944fc2849e0819796d4f57120c10933",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [
+                {
+                  "type": "url_citation",
+                  "end_index": 393,
+                  "start_index": 182,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Here%20is%20Everything%20Microsoft%20Announced,Ignite%202025%20in%20San%20Francisco"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 703,
+                  "start_index": 513,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=hold%20its%20beer,every%20single%20major%20announcement%20from"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 2468,
+                  "start_index": 871,
+                  "title": "微软 Ignite 2025 大会的 5 项重要公告 - techcabal.com",
+                  "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E9%9A%8F%E7%9D%80%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E7%9A%84%E5%85%AC%E5%8F%B8%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8%E8%83%BD%E5%A4%9F%E8%B7%A8%E5%A4%9A%E4%B8%AA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%8C%E5%BE%AE%E8%BD%AF%E6%AD%A3%E5%B0%86%E8%87%AA%E8%BA%AB%E5%AE%9A%E4%BD%8D%E4%B8%BA%E6%9E%84%E5%BB%BA%E5%92%8C%E7%AE%A1%E7%90%86%E8%BF%99%E4%BA%9B%E4%BB%A3%E7%90%86%E7%9A%84%E5%AE%89%E5%85%A8%E7%BB%9F%E4%B8%80%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8F%90%E4%BE%9B%E5%95%86%E3%80%82%20%E8%AF%A5%E5%85%AC%E5%8F%B8%E6%8E%A8%E5%87%BA%E4%BA%86%E4%B8%80%E5%A5%97%E9%9B%86%E6%88%90%E6%8A%80%E6%9C%AF%E6%A0%88%EF%BC%8C%E6%97%A8%E5%9C%A8%E5%B8%AE%E5%8A%A9%E7%94%A8%E6%88%B7%E5%9C%A8%E7%8E%B0%E6%9C%89%E7%9A%84%E8%BA%AB%E4%BB%BD%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9E%84%E5%BB%BA%E3%80%81%E7%AE%A1%E7%90%86%E5%92%8C%E4%BF%9D%E6%8A%A4%E4%BB%A3%E7%90%86%E3%80%82%20%E5%85%AC%E5%91%8A%201%EF%BC%9AMicrosoft%20Agent,Defender%20%E5%92%8C%20Purview%20%E8%BF%9E%E6%8E%A5%EF%BC%8C%E4%BB%A5%E4%BF%9D%E6%8A%A4%E6%82%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E3%80%82%20%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%98%BB%E6%AD%A2%E6%94%BB%E5%87%BB%E3%80%81%E5%87%8F%E5%B0%91%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%EF%BC%8C%E5%B9%B6%E5%85%81%E8%AE%B8%E6%82%A8%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E3%80%82"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3707,
+                  "start_index": 2557,
+                  "title": "微软 Ignite 2025 大会的 5 项重要公告 - techcabal.com",
+                  "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E8%BF%99%E6%9C%89%E5%8A%A9%E4%BA%8E%E6%82%A8%E6%8E%A7%E5%88%B6%E6%AF%8F%E4%B8%AA%E4%BB%A3%E7%90%86%E7%9A%84%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%EF%BC%8C%E5%B9%B6%E9%99%8D%E4%BD%8E%E5%9B%A0%E7%96%8F%E5%BF%BD%E5%AF%BC%E8%87%B4%E6%95%B0%E6%8D%AE%E6%B3%84%E9%9C%B2%E6%88%96%E6%BB%A5%E7%94%A8%E7%9A%84%E9%A3%8E%E9%99%A9%E3%80%82%20Agent%20365%20%E5%8F%AF%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BF%90%E8%A1%8C%E3%80%82%20%E5%AE%83%E6%94%AF%E6%8C%81%E4%BD%BF%E7%94%A8,Foundry%20IQ%EF%BC%9A%20%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%BA%E6%82%A8%E6%8F%90%E4%BE%9B%E4%BA%86%E4%B8%80%E4%B8%AA%E5%AE%89%E5%85%A8%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E7%94%A8%E4%BA%8E%E5%AD%98%E5%82%A8%E5%92%8C%E7%BB%84%E7%BB%87%E4%BB%A3%E7%90%86%E6%89%80%E9%9C%80%E7%9A%84%E4%BF%A1%E6%81%AF%E3%80%82%20%E6%82%A8%E5%8F%AF%E4%BB%A5%E5%88%9B%E5%BB%BA%E5%9F%BA%E4%BA%8E%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E5%B9%B6%E8%BF%9E%E6%8E%A5%E6%9D%A5%E8%87%AA%20SharePoint%E3%80%81Fabric"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 4571,
+                  "start_index": 3844,
+                  "title": "微軟Ignite 2025：Copilot再進化、導入Work IQ、Agent Mode，整合GPT-5與Sora 2",
+                  "url": "https://tw.news.yahoo.com/microsoft-ignite-2025-copilot-evolves-again-introduces-work-iq-and-agent-mode-and-integrates-gpt-5-and-sora-2-130418703.html#:~:text=%E5%BE%AE%E8%BB%9F%E7%A8%8D%E6%97%A9%E8%88%89%E8%BE%A6%E7%9A%84Ignite%202025%E5%B9%B4%E5%BA%A6%E9%96%8B%E7%99%BC%E8%80%85%E5%A4%A7%E6%9C%83%EF%BC%8C%E4%B8%BB%E8%BB%B8%E8%81%9A%E7%84%A6%E6%96%BC%E3%80%8CAI%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F%E3%80%8D%E7%9A%84%E5%AE%8C%E6%95%B4%E8%B3%A6%E8%83%BD%EF%BC%8C%E5%BE%9E%E5%BA%95%E5%B1%A4%E6%A8%A1%E5%9E%8B%E5%88%B0%E7%B5%82%E7%AB%AF%E6%87%89%E7%94%A8%EF%BC%8C%E5%8D%94%E5%8A%A9%E4%BC%81%E6%A5%AD%E6%88%90%E7%82%BA%E3%80%8C%E5%89%8D%E7%9E%BB%E4%BC%81%E6%A5%AD%E3%80%8D%20,5%E8%88%87Sora%202%EF%BC%8CWork"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 4893,
+                  "start_index": 4631,
+                  "title": "Microsoft Ignite 2025: Copilot and agents built to power the Frontier ...",
+                  "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=capabilities%20in%20Microsoft%20365%20Copilot,agents%E2%80%94enables%20you%20to%20manage%20and"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 5293,
+                  "start_index": 4979,
+                  "title": "從創意到部署：微軟 Ignite 2025 登場，展現完整 AI 生命週期 - Source Asia",
+                  "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=Agent%EF%BC%8CCUA%EF%BC%89%20%E5%88%B0%20Sora%202%E3%80%82%20%E6%AD%A4%E5%A4%96%EF%BC%8C%E5%BE%AE%E8%BB%9F%E4%B9%9F%E5%BC%95%E5%85%A5,365%20Copilot%20%E6%96%B0%E5%8A%9F%E8%83%BD%E7%9A%86%E4%BB%A5%20Work%20IQ"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 5583,
+                  "start_index": 5402,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Actions%3A%20%22One,Router%3A%20A%20new%20tool%20that"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 6075,
+                  "start_index": 5702,
+                  "title": "從創意到部署：微軟 Ignite 2025 登場，展現完整 AI 生命週期 - Source Asia",
+                  "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=%E7%9A%84%E3%80%8A%E8%B2%A1%E5%AF%8C%E3%80%8B%E5%85%A8%E7%90%83%20500%20%E5%BC%B7%E4%BC%81%E6%A5%AD%E4%BD%BF%E7%94%A8%20Microsoft%20365,%E5%A6%82%E4%BB%8A%EF%BC%8C%E9%96%8B%E7%99%BC%E8%80%85%E6%9B%B4%E5%8F%AF%E9%80%8F%E9%81%8E%20APIs%20%E5%AD%98%E5%8F%96%20Work%20IQ"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 6651,
+                  "start_index": 6211,
+                  "title": "Microsoft Ignite 2025 深度解析 - PANGSHARE",
+                  "url": "https://www.pangshare.com/microsoft-ignite-2025-features/#:~:text=%E4%B8%93%E4%B8%9A%E4%BA%BA%E5%A3%AB%E7%9A%84%E5%B9%B4%E5%BA%A6%E5%A4%A7%E4%BC%9A%EF%BC%8CIgnite%202025%20%E5%B1%95%E7%A4%BA%E4%BA%86%20Windows%E3%80%81Azure%E3%80%81Microsoft%20365,quantum%EF%BC%88%E5%90%8E%E9%87%8F%E5%AD%90%EF%BC%89%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E4%B9%9F%E8%8E%B7%E5%BE%97%E4%BA%86%E6%98%BE%E8%91%97%E5%8D%87%E7%BA%A7%E3%80%82"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 8238,
+                  "start_index": 6718,
+                  "title": "微软 Ignite 2025 大会的 5 项重要公告 - techcabal.com",
+                  "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E8%BF%99%E4%BA%9B%E5%B1%82%E7%BA%A7%E5%85%B1%E5%90%8C%E4%B8%BA%E6%82%A8%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E5%AE%89%E5%85%A8%E3%80%81%E4%B8%80%E8%87%B4%E5%9C%B0%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E6%89%80%E9%9C%80%E7%9A%84%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BF%A1%E6%81%AF%E3%80%82%20IQ%20Stack%20%E6%9E%84%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BB%9F%E4%B8%80%E7%9A%84%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84%EF%BC%8C%E4%B8%BA%E9%83%A8%E7%BD%B2%E7%9A%84%E6%AF%8F%E4%B8%AA%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E6%9B%B4%E6%89%8E%E5%AE%9E%E7%9A%84%E5%9F%BA%E7%A1%80%E3%80%81%E6%9B%B4%E6%98%8E%E6%99%BA%E7%9A%84%E5%86%B3%E7%AD%96%E5%92%8C%E6%9B%B4%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E7%BB%93%E6%9E%9C%E3%80%82%20%E8%A1%A8%E6%A0%BC%EF%BC%9A%E5%BE%AE%E8%BD%AF%E2%80%9CIQ%E2%80%9D%E7%9F%A5%E8%AF%86%E6%A0%88,Studio%20%E6%9E%84%E5%BB%BA%E4%BB%A3%E7%90%86%E3%80%82%20%E8%BF%99%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%E9%83%BD%E8%83%BD%E8%AE%A9%E6%82%A8%E5%AE%89%E5%85%A8%E5%9C%B0%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%90%8C%E6%97%B6%E5%B0%8A%E9%87%8D%E6%95%8F%E6%84%9F%E5%BA%A6%E6%A0%87%E7%AD%BE%E5%92%8C%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE%E3%80%82%20%E5%85%AC%E5%91%8A%204%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%E7%9A%84%E5%86%85%E7%BD%AE%E5%AE%89%E5%85%A8%E6%80%A7%E5%92%8C%E5%90%88%E8%A7%84%E6%80%A7"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 8486,
+                  "start_index": 8348,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Mistral,PC"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 8860,
+                  "start_index": 8659,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=data%20lake%2C%20allowing%20agents%20to,custom%20CPU%20that%20offers%2050"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 9970,
+                  "start_index": 8861,
+                  "title": "微软 Ignite 2025 大会的 5 项重要公告 - techcabal.com",
+                  "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E6%95%8F%E6%84%9F%E5%86%85%E5%AE%B9%E5%8F%97%E5%88%B0%E4%BF%9D%E6%8A%A4%EF%BC%8C%E4%BB%A3%E7%90%86%E5%8F%AA%E8%83%BD%E8%AE%BF%E9%97%AE%E5%85%B6%E8%A2%AB%E5%85%81%E8%AE%B8%E6%9F%A5%E7%9C%8B%E7%9A%84%E4%BF%A1%E6%81%AF%E3%80%82%20Purview%20%E5%9C%A8%E6%A3%80%E7%B4%A2%E8%BF%87%E7%A8%8B%E5%92%8C%E8%BE%93%E5%87%BA%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%BC%BA%E5%88%B6%E6%89%A7%E8%A1%8C%E8%A7%84%E5%88%99%EF%BC%8C%E4%B8%BA%E6%82%A8%E6%8F%90%E4%BE%9B%E5%8F%8C%E9%87%8D%E4%BF%9D%E6%8A%A4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E6%82%A8%E5%9C%A8%E6%95%B4%E4%B8%AA%20AI%20%E8%AE%BE%E7%BD%AE%E4%B8%AD%E4%BF%9D%E6%8C%81%E5%90%88%E8%A7%84%E6%80%A7%E3%80%82,Copilot%20%E7%8E%B0%E5%9C%A8%E5%8F%AF%E7%9B%B4%E6%8E%A5%E4%B8%8E%20SQL%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90%EF%BC%8C%E4%BB%8E%E8%80%8C%E7%AE%80%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BB%A3%E7%A0%81%E7%9A%84%E7%BC%96%E5%86%99%E5%92%8C%E7%AE%A1%E7%90%86%E3%80%82%20Microsoft"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 10258,
+                  "start_index": 10055,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=is%20designed%20for%20security,embedded%20directly%20into%20Microsoft%20365"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 11353,
+                  "start_index": 10348,
+                  "title": "微软 Ignite 2025 大会的 5 项重要公告 - techcabal.com",
+                  "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E6%82%A8%E6%97%A0%E9%9C%80%E5%90%8E%E7%BB%AD%E6%B7%BB%E5%8A%A0%E6%B2%BB%E7%90%86%E6%88%96%E5%90%88%E8%A7%84%E6%80%A7%E5%8A%9F%E8%83%BD%E3%80%82%20%E6%82%A8%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%20Foundry%20Agent%20Service,AI%20%E4%BB%A3%E7%90%86%E6%96%B9%E9%9D%A2%E5%8F%91%E6%8C%A5%E7%9D%80%E5%85%B3%E9%94%AE%E4%BD%9C%E7%94%A8%E3%80%82%20%E5%AE%83%E5%BC%95%E5%85%A5%E4%BA%86%E5%8E%9F%E7%94%9F%20AI%20%E5%8A%9F%E8%83%BD%EF%BC%8C%E4%BD%BF%E6%82%A8%E8%83%BD%E5%A4%9F%E5%9C%A8%E9%9D%A0%E8%BF%91%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BD%8D%E7%BD%AE%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%9E%8B%EF%BC%8C%E4%BB%8E%E8%80%8C%E6%8F%90%E9%AB%98%E9%80%9F%E5%BA%A6%E5%B9%B6%E5%87%8F%E5%B0%91%E5%9C%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%B8%AD%E9%83%A8%E7%BD%B2%E6%99%BA%E8%83%BD%E5%8A%9F%E8%83%BD%E6%89%80%E9%9C%80%E7%9A%84%E5%B7%A5%E4%BD%9C%E9%87%8F%E3%80%82"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 11623,
+                  "start_index": 11404,
+                  "title": "Microsoft Ignite 2025: The 6 Updates We’re Paying Attention To",
+                  "url": "https://convverge.com/blog/news-and-announcements/microsoft-ignite-2025-key-takeaways/#:~:text=match%20at%20L95%20security%20stack,data%20security%20remediation%E2%80%94and%20importantly%2C%20Security"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 12440,
+                  "start_index": 11713,
+                  "title": "微軟Ignite 2025：Copilot再進化、導入Work IQ、Agent Mode，整合GPT-5與Sora 2",
+                  "url": "https://tw.news.yahoo.com/microsoft-ignite-2025-copilot-evolves-again-introduces-work-iq-and-agent-mode-and-integrates-gpt-5-and-sora-2-130418703.html#:~:text=%E5%BE%AE%E8%BB%9F%E7%A8%8D%E6%97%A9%E8%88%89%E8%BE%A6%E7%9A%84Ignite%202025%E5%B9%B4%E5%BA%A6%E9%96%8B%E7%99%BC%E8%80%85%E5%A4%A7%E6%9C%83%EF%BC%8C%E4%B8%BB%E8%BB%B8%E8%81%9A%E7%84%A6%E6%96%BC%E3%80%8CAI%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F%E3%80%8D%E7%9A%84%E5%AE%8C%E6%95%B4%E8%B3%A6%E8%83%BD%EF%BC%8C%E5%BE%9E%E5%BA%95%E5%B1%A4%E6%A8%A1%E5%9E%8B%E5%88%B0%E7%B5%82%E7%AB%AF%E6%87%89%E7%94%A8%EF%BC%8C%E5%8D%94%E5%8A%A9%E4%BC%81%E6%A5%AD%E6%88%90%E7%82%BA%E3%80%8C%E5%89%8D%E7%9E%BB%E4%BC%81%E6%A5%AD%E3%80%8D%20,5%E8%88%87Sora%202%EF%BC%8CWork"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 14141,
+                  "start_index": 12544,
+                  "title": "微软 Ignite 2025 大会的 5 项重要公告 - techcabal.com",
+                  "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E9%9A%8F%E7%9D%80%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E7%9A%84%E5%85%AC%E5%8F%B8%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8%E8%83%BD%E5%A4%9F%E8%B7%A8%E5%A4%9A%E4%B8%AA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%8C%E5%BE%AE%E8%BD%AF%E6%AD%A3%E5%B0%86%E8%87%AA%E8%BA%AB%E5%AE%9A%E4%BD%8D%E4%B8%BA%E6%9E%84%E5%BB%BA%E5%92%8C%E7%AE%A1%E7%90%86%E8%BF%99%E4%BA%9B%E4%BB%A3%E7%90%86%E7%9A%84%E5%AE%89%E5%85%A8%E7%BB%9F%E4%B8%80%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8F%90%E4%BE%9B%E5%95%86%E3%80%82%20%E8%AF%A5%E5%85%AC%E5%8F%B8%E6%8E%A8%E5%87%BA%E4%BA%86%E4%B8%80%E5%A5%97%E9%9B%86%E6%88%90%E6%8A%80%E6%9C%AF%E6%A0%88%EF%BC%8C%E6%97%A8%E5%9C%A8%E5%B8%AE%E5%8A%A9%E7%94%A8%E6%88%B7%E5%9C%A8%E7%8E%B0%E6%9C%89%E7%9A%84%E8%BA%AB%E4%BB%BD%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9E%84%E5%BB%BA%E3%80%81%E7%AE%A1%E7%90%86%E5%92%8C%E4%BF%9D%E6%8A%A4%E4%BB%A3%E7%90%86%E3%80%82%20%E5%85%AC%E5%91%8A%201%EF%BC%9AMicrosoft%20Agent,Defender%20%E5%92%8C%20Purview%20%E8%BF%9E%E6%8E%A5%EF%BC%8C%E4%BB%A5%E4%BF%9D%E6%8A%A4%E6%82%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E3%80%82%20%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%98%BB%E6%AD%A2%E6%94%BB%E5%87%BB%E3%80%81%E5%87%8F%E5%B0%91%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%EF%BC%8C%E5%B9%B6%E5%85%81%E8%AE%B8%E6%82%A8%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E3%80%82"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 15662,
+                  "start_index": 14142,
+                  "title": "微软 Ignite 2025 大会的 5 项重要公告 - techcabal.com",
+                  "url": "https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E8%BF%99%E4%BA%9B%E5%B1%82%E7%BA%A7%E5%85%B1%E5%90%8C%E4%B8%BA%E6%82%A8%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E5%AE%89%E5%85%A8%E3%80%81%E4%B8%80%E8%87%B4%E5%9C%B0%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E6%89%80%E9%9C%80%E7%9A%84%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BF%A1%E6%81%AF%E3%80%82%20IQ%20Stack%20%E6%9E%84%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BB%9F%E4%B8%80%E7%9A%84%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84%EF%BC%8C%E4%B8%BA%E9%83%A8%E7%BD%B2%E7%9A%84%E6%AF%8F%E4%B8%AA%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E6%9B%B4%E6%89%8E%E5%AE%9E%E7%9A%84%E5%9F%BA%E7%A1%80%E3%80%81%E6%9B%B4%E6%98%8E%E6%99%BA%E7%9A%84%E5%86%B3%E7%AD%96%E5%92%8C%E6%9B%B4%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E7%BB%93%E6%9E%9C%E3%80%82%20%E8%A1%A8%E6%A0%BC%EF%BC%9A%E5%BE%AE%E8%BD%AF%E2%80%9CIQ%E2%80%9D%E7%9F%A5%E8%AF%86%E6%A0%88,Studio%20%E6%9E%84%E5%BB%BA%E4%BB%A3%E7%90%86%E3%80%82%20%E8%BF%99%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%E9%83%BD%E8%83%BD%E8%AE%A9%E6%82%A8%E5%AE%89%E5%85%A8%E5%9C%B0%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%90%8C%E6%97%B6%E5%B0%8A%E9%87%8D%E6%95%8F%E6%84%9F%E5%BA%A6%E6%A0%87%E7%AD%BE%E5%92%8C%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE%E3%80%82%20%E5%85%AC%E5%91%8A%204%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%E7%9A%84%E5%86%85%E7%BD%AE%E5%AE%89%E5%85%A8%E6%80%A7%E5%92%8C%E5%90%88%E8%A7%84%E6%80%A7"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 16270,
+                  "start_index": 15727,
+                  "title": "從創意到部署：微軟 Ignite 2025 登場，展現完整 AI 生命週期 - Source Asia",
+                  "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=%E5%9C%A8%E4%BB%8A%E5%B9%B4%E7%9A%84%20Microsoft%20Ignite%20%E5%A4%A7%E6%9C%83%E4%B8%AD%EF%BC%8C%E5%BE%AE%E8%BB%9F%E8%81%9A%E7%84%A6%E6%96%BC%E8%B3%A6%E8%83%BD%20AI,365%20Copilot%20%E8%88%87%20Agents%20%E7%90%86%E8%A7%A3%E4%BD%BF%E7%94%A8%E8%80%85%E3%80%8C%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E3%80%81%E8%88%87%E8%AA%B0%E5%8D%94%E4%BD%9C%EF%BC%8C%E4%BB%A5%E5%8F%8A%E8%99%95%E7%90%86%E5%93%AA%E4%BA%9B%E5%85%A7%E5%AE%B9%E3%80%8D%E3%80%82"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 16644,
+                  "start_index": 16271,
+                  "title": "從創意到部署：微軟 Ignite 2025 登場，展現完整 AI 生命週期 - Source Asia",
+                  "url": "https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=%E7%9A%84%E3%80%8A%E8%B2%A1%E5%AF%8C%E3%80%8B%E5%85%A8%E7%90%83%20500%20%E5%BC%B7%E4%BC%81%E6%A5%AD%E4%BD%BF%E7%94%A8%20Microsoft%20365,%E5%A6%82%E4%BB%8A%EF%BC%8C%E9%96%8B%E7%99%BC%E8%80%85%E6%9B%B4%E5%8F%AF%E9%80%8F%E9%81%8E%20APIs%20%E5%AD%98%E5%8F%96%20Work%20IQ"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 16898,
+                  "start_index": 16717,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Actions%3A%20%22One,Router%3A%20A%20new%20tool%20that"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 17100,
+                  "start_index": 16899,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=data%20lake%2C%20allowing%20agents%20to,custom%20CPU%20that%20offers%2050"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 17396,
+                  "start_index": 17193,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=is%20designed%20for%20security,embedded%20directly%20into%20Microsoft%20365"
+                }
+              ],
+              "logprobs": [],
+              "text": "# 微軟 Ignite 2025 大會的 Top 3 議題\n\n**Microsoft Ignite 2025** 年度大會於 2025 年 11 月 18-21 日在舊金山舉行，主題圍繞在**人工智慧 (AI)**如何融入企業運作，開啟所謂「**AI 核心時代**」，協助組織成為「前瞻企業 (Frontier firms)」。大會中微軟發表了超過 70 項更新 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Here%20is%20Everything%20Microsoft%20Announced,Ignite%202025%20in%20San%20Francisco))。經綜合官方資訊與業界分析，**三大焦點議題**如下：\n\n1. **AI 代理（Agents）時代的崛起與 Microsoft Agent 365 平台：**  \n   *微軟強調企業將從傳統的聊天機器人時代邁入「自主 AI 代理人」時代 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=hold%20its%20beer,every%20single%20major%20announcement%20from))。大會推出全新的 **Microsoft Agent 365** 平台，作為**統一管理企業內所有 AI 代理的控制中心**，賦予每個 AI 代理唯一的身分（透過 Entra ID）並提供集中式的註冊表、存取控制、監控與治理能力。這將解決企業內「隱形 AI（Shadow AI）」氾濫的隱憂，確保 AI 代理的**安全性與合規管理** ([techcabal.com](https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E9%9A%8F%E7%9D%80%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E7%9A%84%E5%85%AC%E5%8F%B8%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8%E8%83%BD%E5%A4%9F%E8%B7%A8%E5%A4%9A%E4%B8%AA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%8C%E5%BE%AE%E8%BD%AF%E6%AD%A3%E5%B0%86%E8%87%AA%E8%BA%AB%E5%AE%9A%E4%BD%8D%E4%B8%BA%E6%9E%84%E5%BB%BA%E5%92%8C%E7%AE%A1%E7%90%86%E8%BF%99%E4%BA%9B%E4%BB%A3%E7%90%86%E7%9A%84%E5%AE%89%E5%85%A8%E7%BB%9F%E4%B8%80%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8F%90%E4%BE%9B%E5%95%86%E3%80%82%20%E8%AF%A5%E5%85%AC%E5%8F%B8%E6%8E%A8%E5%87%BA%E4%BA%86%E4%B8%80%E5%A5%97%E9%9B%86%E6%88%90%E6%8A%80%E6%9C%AF%E6%A0%88%EF%BC%8C%E6%97%A8%E5%9C%A8%E5%B8%AE%E5%8A%A9%E7%94%A8%E6%88%B7%E5%9C%A8%E7%8E%B0%E6%9C%89%E7%9A%84%E8%BA%AB%E4%BB%BD%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9E%84%E5%BB%BA%E3%80%81%E7%AE%A1%E7%90%86%E5%92%8C%E4%BF%9D%E6%8A%A4%E4%BB%A3%E7%90%86%E3%80%82%20%E5%85%AC%E5%91%8A%201%EF%BC%9AMicrosoft%20Agent,Defender%20%E5%92%8C%20Purview%20%E8%BF%9E%E6%8E%A5%EF%BC%8C%E4%BB%A5%E4%BF%9D%E6%8A%A4%E6%82%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E3%80%82%20%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%98%BB%E6%AD%A2%E6%94%BB%E5%87%BB%E3%80%81%E5%87%8F%E5%B0%91%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%EF%BC%8C%E5%B9%B6%E5%85%81%E8%AE%B8%E6%82%A8%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E3%80%82))。透過 Agent 365，IT 部門能輕鬆觀測和控管各種由微軟、開源或第三方平台構建的 AI 代理，防止未經授權的代理存取敏感資料，並讓 AI 真正成為企業可信賴的生產力夥伴 ([techcabal.com](https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E8%BF%99%E6%9C%89%E5%8A%A9%E4%BA%8E%E6%82%A8%E6%8E%A7%E5%88%B6%E6%AF%8F%E4%B8%AA%E4%BB%A3%E7%90%86%E7%9A%84%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%EF%BC%8C%E5%B9%B6%E9%99%8D%E4%BD%8E%E5%9B%A0%E7%96%8F%E5%BF%BD%E5%AF%BC%E8%87%B4%E6%95%B0%E6%8D%AE%E6%B3%84%E9%9C%B2%E6%88%96%E6%BB%A5%E7%94%A8%E7%9A%84%E9%A3%8E%E9%99%A9%E3%80%82%20Agent%20365%20%E5%8F%AF%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BF%90%E8%A1%8C%E3%80%82%20%E5%AE%83%E6%94%AF%E6%8C%81%E4%BD%BF%E7%94%A8,Foundry%20IQ%EF%BC%9A%20%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%BA%E6%82%A8%E6%8F%90%E4%BE%9B%E4%BA%86%E4%B8%80%E4%B8%AA%E5%AE%89%E5%85%A8%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E7%94%A8%E4%BA%8E%E5%AD%98%E5%82%A8%E5%92%8C%E7%BB%84%E7%BB%87%E4%BB%A3%E7%90%86%E6%89%80%E9%9C%80%E7%9A%84%E4%BF%A1%E6%81%AF%E3%80%82%20%E6%82%A8%E5%8F%AF%E4%BB%A5%E5%88%9B%E5%BB%BA%E5%9F%BA%E4%BA%8E%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%8C%E5%B9%B6%E8%BF%9E%E6%8E%A5%E6%9D%A5%E8%87%AA%20SharePoint%E3%80%81Fabric))。*\n\n2. **Microsoft 365 Copilot 全面升級與 Work IQ 智慧層：**  \n   *微軟在 Ignite 2025 發布了一系列 **Microsoft 365 Copilot** 的重大更新，讓這款 AI 助理更加智慧、全方位融入工作流程 ([tw.news.yahoo.com](https://tw.news.yahoo.com/microsoft-ignite-2025-copilot-evolves-again-introduces-work-iq-and-agent-mode-and-integrates-gpt-5-and-sora-2-130418703.html#:~:text=%E5%BE%AE%E8%BB%9F%E7%A8%8D%E6%97%A9%E8%88%89%E8%BE%A6%E7%9A%84Ignite%202025%E5%B9%B4%E5%BA%A6%E9%96%8B%E7%99%BC%E8%80%85%E5%A4%A7%E6%9C%83%EF%BC%8C%E4%B8%BB%E8%BB%B8%E8%81%9A%E7%84%A6%E6%96%BC%E3%80%8CAI%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F%E3%80%8D%E7%9A%84%E5%AE%8C%E6%95%B4%E8%B3%A6%E8%83%BD%EF%BC%8C%E5%BE%9E%E5%BA%95%E5%B1%A4%E6%A8%A1%E5%9E%8B%E5%88%B0%E7%B5%82%E7%AB%AF%E6%87%89%E7%94%A8%EF%BC%8C%E5%8D%94%E5%8A%A9%E4%BC%81%E6%A5%AD%E6%88%90%E7%82%BA%E3%80%8C%E5%89%8D%E7%9E%BB%E4%BC%81%E6%A5%AD%E3%80%8D%20,5%E8%88%87Sora%202%EF%BC%8CWork))。最重要的新功能之一是 **Work IQ** 智慧層 — 這是一個讓 Copilot 深度瞭解使用者工作內容的智能層 ([www.microsoft.com](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=capabilities%20in%20Microsoft%20365%20Copilot,agents%E2%80%94enables%20you%20to%20manage%20and))。Work IQ 能整合使用者郵件、文件、會議、聊天等**上下文資訊**以及個人偏好與工作習慣，讓 Copilot 預測使用者需求並主動建議適合的 AI 代理協助完成任務 ([news.microsoft.com](https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=Agent%EF%BC%8CCUA%EF%BC%89%20%E5%88%B0%20Sora%202%E3%80%82%20%E6%AD%A4%E5%A4%96%EF%BC%8C%E5%BE%AE%E8%BB%9F%E4%B9%9F%E5%BC%95%E5%85%A5,365%20Copilot%20%E6%96%B0%E5%8A%9F%E8%83%BD%E7%9A%86%E4%BB%A5%20Work%20IQ))。同時，Office 應用程式新增了 **代理人模式 (Agent Mode)**，用戶可在 Word、Excel、PowerPoint 中透過 Copilot 執行複雜任務，如以自然語言產生圖表、分析資料或撰寫內容 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Actions%3A%20%22One,Router%3A%20A%20new%20tool%20that))。此外，微軟將 OpenAI 最新的 **GPT-5** 和次世代影片生成模型 **Sora 2** 引入 Copilot，並開放整合 **Anthropic** 的模型，實現**多模型協同**，確保為不同工作需求匹配最佳的 AI 模型 ([news.microsoft.com](https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=%E7%9A%84%E3%80%8A%E8%B2%A1%E5%AF%8C%E3%80%8B%E5%85%A8%E7%90%83%20500%20%E5%BC%B7%E4%BC%81%E6%A5%AD%E4%BD%BF%E7%94%A8%20Microsoft%20365,%E5%A6%82%E4%BB%8A%EF%BC%8C%E9%96%8B%E7%99%BC%E8%80%85%E6%9B%B4%E5%8F%AF%E9%80%8F%E9%81%8E%20APIs%20%E5%AD%98%E5%8F%96%20Work%20IQ))。這些升級使 Copilot 成為企業日常工作中不可或缺且更聰明的數位助理。*\n\n3. **雲端基礎架構、資料平台與安全性的 AI 創新：**  \n   *為了支援 AI 技術的全面落地，微軟在 Ignite 2025 推出了多項**雲端服務與資料基礎架構**的創新升級 ([www.pangshare.com](https://www.pangshare.com/microsoft-ignite-2025-features/#:~:text=%E4%B8%93%E4%B8%9A%E4%BA%BA%E5%A3%AB%E7%9A%84%E5%B9%B4%E5%BA%A6%E5%A4%A7%E4%BC%9A%EF%BC%8CIgnite%202025%20%E5%B1%95%E7%A4%BA%E4%BA%86%20Windows%E3%80%81Azure%E3%80%81Microsoft%20365,quantum%EF%BC%88%E5%90%8E%E9%87%8F%E5%AD%90%EF%BC%89%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E4%B9%9F%E8%8E%B7%E5%BE%97%E4%BA%86%E6%98%BE%E8%91%97%E5%8D%87%E7%BA%A7%E3%80%82))。其中，微軟發佈全新的 **Microsoft Foundry** 平台，提供統一的環境來**設計、測試及部署 AI 應用與代理** ([techcabal.com](https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E8%BF%99%E4%BA%9B%E5%B1%82%E7%BA%A7%E5%85%B1%E5%90%8C%E4%B8%BA%E6%82%A8%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E5%AE%89%E5%85%A8%E3%80%81%E4%B8%80%E8%87%B4%E5%9C%B0%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E6%89%80%E9%9C%80%E7%9A%84%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BF%A1%E6%81%AF%E3%80%82%20IQ%20Stack%20%E6%9E%84%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BB%9F%E4%B8%80%E7%9A%84%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84%EF%BC%8C%E4%B8%BA%E9%83%A8%E7%BD%B2%E7%9A%84%E6%AF%8F%E4%B8%AA%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E6%9B%B4%E6%89%8E%E5%AE%9E%E7%9A%84%E5%9F%BA%E7%A1%80%E3%80%81%E6%9B%B4%E6%98%8E%E6%99%BA%E7%9A%84%E5%86%B3%E7%AD%96%E5%92%8C%E6%9B%B4%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E7%BB%93%E6%9E%9C%E3%80%82%20%E8%A1%A8%E6%A0%BC%EF%BC%9A%E5%BE%AE%E8%BD%AF%E2%80%9CIQ%E2%80%9D%E7%9F%A5%E8%AF%86%E6%A0%88,Studio%20%E6%9E%84%E5%BB%BA%E4%BB%A3%E7%90%86%E3%80%82%20%E8%BF%99%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%E9%83%BD%E8%83%BD%E8%AE%A9%E6%82%A8%E5%AE%89%E5%85%A8%E5%9C%B0%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%90%8C%E6%97%B6%E5%B0%8A%E9%87%8D%E6%95%8F%E6%84%9F%E5%BA%A6%E6%A0%87%E7%AD%BE%E5%92%8C%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE%E3%80%82%20%E5%85%AC%E5%91%8A%204%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%E7%9A%84%E5%86%85%E7%BD%AE%E5%AE%89%E5%85%A8%E6%80%A7%E5%92%8C%E5%90%88%E8%A7%84%E6%80%A7))。Foundry 結合了 **IQ Stack**（包含 Work IQ、Foundry IQ、Fabric IQ 等知識層），開發者得以利用企業內部與雲端數據，打造不會「幻覺」（hallucinate）的 AI 應用 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Mistral,PC))。在資料服務方面，微軟推出了新一代高效能資料庫 **Azure HorizonDB**（為 AI 工作負載優化的 PostgreSQL 資料庫）和正式發布相容 MongoDB 的 **Azure DocumentDB**，並宣布 **SQL Server 2025** 正式上市，內建 AI 功能且與 Microsoft Fabric 深度整合 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=data%20lake%2C%20allowing%20agents%20to,custom%20CPU%20that%20offers%2050)) ([techcabal.com](https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E6%95%8F%E6%84%9F%E5%86%85%E5%AE%B9%E5%8F%97%E5%88%B0%E4%BF%9D%E6%8A%A4%EF%BC%8C%E4%BB%A3%E7%90%86%E5%8F%AA%E8%83%BD%E8%AE%BF%E9%97%AE%E5%85%B6%E8%A2%AB%E5%85%81%E8%AE%B8%E6%9F%A5%E7%9C%8B%E7%9A%84%E4%BF%A1%E6%81%AF%E3%80%82%20Purview%20%E5%9C%A8%E6%A3%80%E7%B4%A2%E8%BF%87%E7%A8%8B%E5%92%8C%E8%BE%93%E5%87%BA%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%BC%BA%E5%88%B6%E6%89%A7%E8%A1%8C%E8%A7%84%E5%88%99%EF%BC%8C%E4%B8%BA%E6%82%A8%E6%8F%90%E4%BE%9B%E5%8F%8C%E9%87%8D%E4%BF%9D%E6%8A%A4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E6%82%A8%E5%9C%A8%E6%95%B4%E4%B8%AA%20AI%20%E8%AE%BE%E7%BD%AE%E4%B8%AD%E4%BF%9D%E6%8C%81%E5%90%88%E8%A7%84%E6%80%A7%E3%80%82,Copilot%20%E7%8E%B0%E5%9C%A8%E5%8F%AF%E7%9B%B4%E6%8E%A5%E4%B8%8E%20SQL%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90%EF%BC%8C%E4%BB%8E%E8%80%8C%E7%AE%80%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BB%A3%E7%A0%81%E7%9A%84%E7%BC%96%E5%86%99%E5%92%8C%E7%AE%A1%E7%90%86%E3%80%82%20Microsoft))。基礎硬體上，Azure 雲端引入了自研 AI 加速處理器 **Azure Cobalt 200**，相較前代 CPU 提升約 50% 效能，以支援海量 AI 訓練需求 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=is%20designed%20for%20security,embedded%20directly%20into%20Microsoft%20365))。在資安領域，微軟擴充 **Purview** 與 **Defender** 的功能，將其深度嵌入 AI 代理的資料檢索與生成流程中，強化 AI 辦公環境的**資料安全與合規** ([techcabal.com](https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E6%82%A8%E6%97%A0%E9%9C%80%E5%90%8E%E7%BB%AD%E6%B7%BB%E5%8A%A0%E6%B2%BB%E7%90%86%E6%88%96%E5%90%88%E8%A7%84%E6%80%A7%E5%8A%9F%E8%83%BD%E3%80%82%20%E6%82%A8%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%20Foundry%20Agent%20Service,AI%20%E4%BB%A3%E7%90%86%E6%96%B9%E9%9D%A2%E5%8F%91%E6%8C%A5%E7%9D%80%E5%85%B3%E9%94%AE%E4%BD%9C%E7%94%A8%E3%80%82%20%E5%AE%83%E5%BC%95%E5%85%A5%E4%BA%86%E5%8E%9F%E7%94%9F%20AI%20%E5%8A%9F%E8%83%BD%EF%BC%8C%E4%BD%BF%E6%82%A8%E8%83%BD%E5%A4%9F%E5%9C%A8%E9%9D%A0%E8%BF%91%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BD%8D%E7%BD%AE%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%9E%8B%EF%BC%8C%E4%BB%8E%E8%80%8C%E6%8F%90%E9%AB%98%E9%80%9F%E5%BA%A6%E5%B9%B6%E5%87%8F%E5%B0%91%E5%9C%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%B8%AD%E9%83%A8%E7%BD%B2%E6%99%BA%E8%83%BD%E5%8A%9F%E8%83%BD%E6%89%80%E9%9C%80%E7%9A%84%E5%B7%A5%E4%BD%9C%E9%87%8F%E3%80%82))；並推出多款嵌入式 **Security Copilot** 代理，協助安全團隊自動化威脅偵測與因應 ([convverge.com](https://convverge.com/blog/news-and-announcements/microsoft-ignite-2025-key-takeaways/#:~:text=match%20at%20L95%20security%20stack,data%20security%20remediation%E2%80%94and%20importantly%2C%20Security))。這些雲端、資料與安全方面的創新，為 AI 的大規模應用提供了強大的後盾，標誌著微軟以**雲端 + AI + 安全**的全方位策略引領產業革新。*\n\n**參考資料：**\n\n1.  ([tw.news.yahoo.com](https://tw.news.yahoo.com/microsoft-ignite-2025-copilot-evolves-again-introduces-work-iq-and-agent-mode-and-integrates-gpt-5-and-sora-2-130418703.html#:~:text=%E5%BE%AE%E8%BB%9F%E7%A8%8D%E6%97%A9%E8%88%89%E8%BE%A6%E7%9A%84Ignite%202025%E5%B9%B4%E5%BA%A6%E9%96%8B%E7%99%BC%E8%80%85%E5%A4%A7%E6%9C%83%EF%BC%8C%E4%B8%BB%E8%BB%B8%E8%81%9A%E7%84%A6%E6%96%BC%E3%80%8CAI%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F%E3%80%8D%E7%9A%84%E5%AE%8C%E6%95%B4%E8%B3%A6%E8%83%BD%EF%BC%8C%E5%BE%9E%E5%BA%95%E5%B1%A4%E6%A8%A1%E5%9E%8B%E5%88%B0%E7%B5%82%E7%AB%AF%E6%87%89%E7%94%A8%EF%BC%8C%E5%8D%94%E5%8A%A9%E4%BC%81%E6%A5%AD%E6%88%90%E7%82%BA%E3%80%8C%E5%89%8D%E7%9E%BB%E4%BC%81%E6%A5%AD%E3%80%8D%20,5%E8%88%87Sora%202%EF%BC%8CWork)) Yahoo新聞 – *〈微軟 Ignite 2025：Copilot 再進化、導入 Work IQ、Agent Mode，整合 GPT-5 與 Sora 2〉.* (2025年11月19日).  \n2.  ([techcabal.com](https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E9%9A%8F%E7%9D%80%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E7%9A%84%E5%85%AC%E5%8F%B8%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8%E8%83%BD%E5%A4%9F%E8%B7%A8%E5%A4%9A%E4%B8%AA%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%EF%BC%8C%E5%BE%AE%E8%BD%AF%E6%AD%A3%E5%B0%86%E8%87%AA%E8%BA%AB%E5%AE%9A%E4%BD%8D%E4%B8%BA%E6%9E%84%E5%BB%BA%E5%92%8C%E7%AE%A1%E7%90%86%E8%BF%99%E4%BA%9B%E4%BB%A3%E7%90%86%E7%9A%84%E5%AE%89%E5%85%A8%E7%BB%9F%E4%B8%80%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8F%90%E4%BE%9B%E5%95%86%E3%80%82%20%E8%AF%A5%E5%85%AC%E5%8F%B8%E6%8E%A8%E5%87%BA%E4%BA%86%E4%B8%80%E5%A5%97%E9%9B%86%E6%88%90%E6%8A%80%E6%9C%AF%E6%A0%88%EF%BC%8C%E6%97%A8%E5%9C%A8%E5%B8%AE%E5%8A%A9%E7%94%A8%E6%88%B7%E5%9C%A8%E7%8E%B0%E6%9C%89%E7%9A%84%E8%BA%AB%E4%BB%BD%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9E%84%E5%BB%BA%E3%80%81%E7%AE%A1%E7%90%86%E5%92%8C%E4%BF%9D%E6%8A%A4%E4%BB%A3%E7%90%86%E3%80%82%20%E5%85%AC%E5%91%8A%201%EF%BC%9AMicrosoft%20Agent,Defender%20%E5%92%8C%20Purview%20%E8%BF%9E%E6%8E%A5%EF%BC%8C%E4%BB%A5%E4%BF%9D%E6%8A%A4%E6%82%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E3%80%82%20%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%98%BB%E6%AD%A2%E6%94%BB%E5%87%BB%E3%80%81%E5%87%8F%E5%B0%91%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%EF%BC%8C%E5%B9%B6%E5%85%81%E8%AE%B8%E6%82%A8%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E3%80%82)) ([techcabal.com](https://techcabal.com/zh-CN/2025/11/20/%E5%BE%AE%E8%BD%AF-Ignite-2025-%E5%A4%A7%E4%BC%9A%E7%9A%84-5-%E9%A1%B9%E9%87%8D%E8%A6%81%E5%85%AC%E5%91%8A/#:~:text=%E8%BF%99%E4%BA%9B%E5%B1%82%E7%BA%A7%E5%85%B1%E5%90%8C%E4%B8%BA%E6%82%A8%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E5%AE%89%E5%85%A8%E3%80%81%E4%B8%80%E8%87%B4%E5%9C%B0%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E6%89%80%E9%9C%80%E7%9A%84%E4%B8%8A%E4%B8%8B%E6%96%87%E4%BF%A1%E6%81%AF%E3%80%82%20IQ%20Stack%20%E6%9E%84%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BB%9F%E4%B8%80%E7%9A%84%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84%EF%BC%8C%E4%B8%BA%E9%83%A8%E7%BD%B2%E7%9A%84%E6%AF%8F%E4%B8%AA%E6%99%BA%E8%83%BD%E4%BD%93%E6%8F%90%E4%BE%9B%E6%9B%B4%E6%89%8E%E5%AE%9E%E7%9A%84%E5%9F%BA%E7%A1%80%E3%80%81%E6%9B%B4%E6%98%8E%E6%99%BA%E7%9A%84%E5%86%B3%E7%AD%96%E5%92%8C%E6%9B%B4%E9%AB%98%E8%B4%A8%E9%87%8F%E7%9A%84%E7%BB%93%E6%9E%9C%E3%80%82%20%E8%A1%A8%E6%A0%BC%EF%BC%9A%E5%BE%AE%E8%BD%AF%E2%80%9CIQ%E2%80%9D%E7%9F%A5%E8%AF%86%E6%A0%88,Studio%20%E6%9E%84%E5%BB%BA%E4%BB%A3%E7%90%86%E3%80%82%20%E8%BF%99%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%E9%83%BD%E8%83%BD%E8%AE%A9%E6%82%A8%E5%AE%89%E5%85%A8%E5%9C%B0%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%90%8C%E6%97%B6%E5%B0%8A%E9%87%8D%E6%95%8F%E6%84%9F%E5%BA%A6%E6%A0%87%E7%AD%BE%E5%92%8C%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE%E3%80%82%20%E5%85%AC%E5%91%8A%204%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BB%A3%E7%90%86%E7%9A%84%E5%86%85%E7%BD%AE%E5%AE%89%E5%85%A8%E6%80%A7%E5%92%8C%E5%90%88%E8%A7%84%E6%80%A7))TechCabal – *〈微软 Ignite 2025 大会的 5 项重要公告〉*. (2025年11月20日).  \n3.  ([news.microsoft.com](https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=%E5%9C%A8%E4%BB%8A%E5%B9%B4%E7%9A%84%20Microsoft%20Ignite%20%E5%A4%A7%E6%9C%83%E4%B8%AD%EF%BC%8C%E5%BE%AE%E8%BB%9F%E8%81%9A%E7%84%A6%E6%96%BC%E8%B3%A6%E8%83%BD%20AI,365%20Copilot%20%E8%88%87%20Agents%20%E7%90%86%E8%A7%A3%E4%BD%BF%E7%94%A8%E8%80%85%E3%80%8C%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E3%80%81%E8%88%87%E8%AA%B0%E5%8D%94%E4%BD%9C%EF%BC%8C%E4%BB%A5%E5%8F%8A%E8%99%95%E7%90%86%E5%93%AA%E4%BA%9B%E5%85%A7%E5%AE%B9%E3%80%8D%E3%80%82)) ([news.microsoft.com](https://news.microsoft.com/source/asia/2025/11/19/ignite2025/?lang=zh-hant#:~:text=%E7%9A%84%E3%80%8A%E8%B2%A1%E5%AF%8C%E3%80%8B%E5%85%A8%E7%90%83%20500%20%E5%BC%B7%E4%BC%81%E6%A5%AD%E4%BD%BF%E7%94%A8%20Microsoft%20365,%E5%A6%82%E4%BB%8A%EF%BC%8C%E9%96%8B%E7%99%BC%E8%80%85%E6%9B%B4%E5%8F%AF%E9%80%8F%E9%81%8E%20APIs%20%E5%AD%98%E5%8F%96%20Work%20IQ))微軟新聞中心 – *〈從創意到部署：微軟 Ignite 2025 登場，展現完整 AI 生命週期〉*. (2025年11月19日).  \n4.  ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Actions%3A%20%22One,Router%3A%20A%20new%20tool%20that)) ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=data%20lake%2C%20allowing%20agents%20to,custom%20CPU%20that%20offers%2050))The Neuron – *“Here is Everything Microsoft Announced at Ignite 2025”.* (2025年11月18日).  \n5.  ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=is%20designed%20for%20security,embedded%20directly%20into%20Microsoft%20365))The Neuron – *“Here is Everything Microsoft Announced at Ignite 2025” – Azure Cobalt 200.* (2025年11月18日)."
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "previous_response_id": "resp_05c6bada5cd3462a006944fa8335a88197a870fac859395702",
+      "prompt_cache_key": null,
+      "prompt_cache_retention": null,
+      "reasoning": {
+        "effort": "medium",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": true,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tools": [
+        {
+          "type": "code_interpreter",
+          "container": {
+            "type": "auto"
+          }
+        },
+        {
+          "type": "web_search_preview",
+          "search_context_size": "medium",
+          "user_location": null
+        }
+      ],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 54110,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 24821,
+        "output_tokens_details": {
+          "reasoning_tokens": 23232
+        },
+        "total_tokens": 78931
+      },
+      "user": null,
+      "metadata": {}
+    }
+  }
+]

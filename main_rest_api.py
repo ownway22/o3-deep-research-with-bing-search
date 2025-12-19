@@ -1,27 +1,27 @@
 """
-O3 Deep Research with Bing Search - Interactive App
-使用 Azure OpenAI 的 O3 深度研究模型進行網路搜尋與分析的互動式應用程式
+O3 Deep Research with Bing Search - REST API Version
+使用 Azure OpenAI REST API 的 O3 深度研究模型進行網路搜尋與分析的互動式應用程式
 """
 
 import os
 import json
+import time
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
-from openai import OpenAI
+import requests
 
 # 載入 .env 檔案中的環境變數
 load_dotenv()
 
 
 class ResearchSession:
-    """管理研究會話的類別"""
+    """管理研究會話的類別 (REST API 版本)"""
     
     def __init__(self):
-        self.client = OpenAI(
-            api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-            base_url=os.getenv("AZURE_OPENAI_ENDPOINT") + "/openai/v1/",
-        )
+        self.api_key = os.getenv("AZURE_OPENAI_API_KEY")
+        self.endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+        self.base_url = f"{self.endpoint}/openai/v1/responses"
         self.research_history = []
         self.session_start_time = datetime.now()
         
@@ -32,17 +32,9 @@ class ResearchSession:
         self.logs = []
         print(f"📝 本次會話的原始回應將記錄於: {self.session_log_file}")
 
-    def log_raw_response(self, stage, user_input, response):
+    def log_raw_response(self, stage, user_input, response_data):
         """記錄原始 Response 到 JSON 檔案"""
         try:
-            # 嘗試將 response 轉換為字典
-            if hasattr(response, 'model_dump'):
-                response_data = response.model_dump(mode='json')
-            elif hasattr(response, 'to_dict'):
-                response_data = response.to_dict()
-            else:
-                response_data = str(response)
-                
             entry = {
                 "timestamp": datetime.now().isoformat(),
                 "stage": stage,
@@ -59,48 +51,133 @@ class ResearchSession:
         except Exception as e:
             print(f"⚠️ 寫入日誌時發生錯誤: {e}")
     
-    def inspect_web_search_queries(self, response, stage_name):
+    def inspect_web_search_queries(self, response_data, stage_name):
         """檢查並顯示 Response 中的 Web Search Query 與 Sources"""
         print(f"\n🔍 [{stage_name}] 檢查 Web Search Query:")
         found_search = False
         
-        if hasattr(response, 'output'):
-            for item in response.output:
-                # 檢查是否為 web_search_call
-                if getattr(item, 'type', '') == 'web_search_call':
-                    action = getattr(item, 'action', None)
-                    if action:
-                        action_type = getattr(action, 'type', '')
-                        
-                        if action_type == 'search':
-                            query = getattr(action, 'query', 'N/A')
-                            print(f"  - [Search] 關鍵字: {query}")
-                            
-                            # 顯示來源連結
-                            sources = getattr(action, 'sources', [])
-                            if sources:
-                                print(f"    來源連結 ({len(sources)}):")
-                                for source in sources:
-                                    url = getattr(source, 'url', 'N/A')
-                                    print(f"      - {url}")
-                            found_search = True
-                            
-                        elif action_type == 'open_page':
-                            url = getattr(action, 'url', 'N/A')
-                            print(f"  - [Open Page] URL: {url}")
-                            found_search = True
-                            
-                        elif action_type == 'find':
-                            pattern = getattr(action, 'pattern', 'N/A')
-                            url = getattr(action, 'url', 'N/A')
-                            print(f"  - [Find] Pattern: {pattern} (in {url})")
-                            found_search = True
+        output = response_data.get('output', [])
+        for item in output:
+            # 檢查是否為 web_search_call
+            if item.get('type') == 'web_search_call':
+                action = item.get('action', {})
+                action_type = action.get('type', '')
+                
+                if action_type == 'search':
+                    query = action.get('query', 'N/A')
+                    print(f"  - [Search] 關鍵字: {query}")
+                    
+                    # 顯示來源連結
+                    sources = action.get('sources', [])
+                    if sources:
+                        print(f"    來源連結 ({len(sources)}):")
+                        for source in sources:
+                            url = source.get('url', 'N/A')
+                            print(f"      - {url}")
+                    found_search = True
+                    
+                elif action_type == 'open_page':
+                    url = action.get('url', 'N/A')
+                    print(f"  - [Open Page] URL: {url}")
+                    found_search = True
+                    
+                elif action_type == 'find':
+                    pattern = action.get('pattern', 'N/A')
+                    url = action.get('url', 'N/A')
+                    print(f"  - [Find] Pattern: {pattern} (in {url})")
+                    found_search = True
         
         if not found_search:
             print("  (此回應中未發現 Web Search 呼叫)")
         print("-" * 40)
 
-    def conduct_research(self, research_topic):
+    def extract_output_text(self, response_data):
+        """從 Response 中提取文字輸出"""
+        output = response_data.get('output', [])
+        text_parts = []
+        
+        for item in output:
+            if item.get('type') == 'message':
+                content = item.get('content', [])
+                for content_item in content:
+                    if content_item.get('type') == 'output_text':
+                        text_parts.append(content_item.get('text', ''))
+        
+        return '\n'.join(text_parts)
+
+    def create_response(self, input_text, previous_response_id=None, background=False):
+        """呼叫 Azure OpenAI REST API 建立研究回應"""
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.api_key}"
+        }
+        
+        payload = {
+            "model": "o3-deep-research",
+            "background": background,
+            "tools": [
+                {"type": "web_search_preview"},
+                {"type": "code_interpreter", "container": {"type": "auto"}}
+            ],
+            "input": input_text
+        }
+        
+        if previous_response_id:
+            payload["previous_response_id"] = previous_response_id
+        
+        try:
+            response = requests.post(
+                self.base_url,
+                headers=headers,
+                json=payload,
+                timeout=1800  # 30 分鐘超時
+            )
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.Timeout:
+            raise Exception("請求超時（30 分鐘）。建議使用 background=True 模式進行更長時間的研究。")
+        except requests.exceptions.RequestException as e:
+            raise Exception(f"API 請求失敗: {str(e)}")
+
+    def get_response_status(self, response_id):
+        """查詢背景任務的狀態 (如果使用 background 模式)"""
+        headers = {
+            "Authorization": f"Bearer {self.api_key}"
+        }
+        
+        url = f"{self.base_url}/{response_id}"
+        
+        try:
+            response = requests.get(url, headers=headers, timeout=30)
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.RequestException as e:
+            raise Exception(f"查詢狀態失敗: {str(e)}")
+
+    def wait_for_completion(self, response_id, max_wait_seconds=600):
+        """等待背景任務完成"""
+        start_time = time.time()
+        print(f"\n⏳ 等待研究任務完成 (Response ID: {response_id})...")
+        
+        while time.time() - start_time < max_wait_seconds:
+            status_response = self.get_response_status(response_id)
+            status = status_response.get('status', 'unknown')
+            
+            print(f"  當前狀態: {status}")
+            
+            if status == 'completed':
+                print("✓ 研究任務已完成！")
+                return status_response
+            elif status == 'failed':
+                error_msg = status_response.get('error', {}).get('message', '未知錯誤')
+                raise Exception(f"研究任務失敗: {error_msg}")
+            
+            # 等待一段時間後再次查詢
+            time.sleep(10)
+        
+        raise Exception(f"等待超時 ({max_wait_seconds} 秒)")
+
+    def conduct_research(self, research_topic, use_background_mode=False):
         """執行完整的研究流程"""
         start_time = datetime.now()
         
@@ -110,7 +187,7 @@ class ResearchSession:
         
         # 第一階段：建立研究計畫（支援迭代修改）
         plan_approved = False
-        response = None
+        response_data = None
         response_id = None
         current_input = (
             f"請針對以下研究內容，列出詳細的研究計畫與搜尋關鍵字清單，不要執行實際的深度搜索。\n\n"
@@ -118,28 +195,22 @@ class ResearchSession:
         )
         
         while not plan_approved:
-            response = self.client.responses.create(
-                model="o3-deep-research",
-                tools=[
-                    {"type": "web_search_preview"},
-                    {"type": "code_interpreter", "container": {"type": "auto"}}
-                ],
-                input=current_input
-            )
+            response_data = self.create_response(current_input, background=False)
             
             # 記錄原始回應
-            self.log_raw_response("Stage 1: Plan Creation", current_input, response)
+            self.log_raw_response("Stage 1: Plan Creation", current_input, response_data)
             
             # 檢查並顯示 Web Search Query
-            self.inspect_web_search_queries(response, "階段 1: 建立研究計畫")
+            self.inspect_web_search_queries(response_data, "階段 1: 建立研究計畫")
 
-            # 顯示研究計畫
+            # 提取並顯示研究計畫
+            output_text = self.extract_output_text(response_data)
             print("\n研究計畫：")
             print("-" * 80)
-            print(response.output_text)
+            print(output_text)
             print("-" * 80)
             
-            response_id = response.id
+            response_id = response_data.get('id')
             print(f"\nResponse ID: {response_id}")
             
             # 等待使用者回饋
@@ -170,20 +241,25 @@ class ResearchSession:
         
         print("\n階段 2: 執行深度研究")
         print("=" * 80)
-        print("正在執行深度研究，這可能需要幾分鐘時間...\n")
+        
+        if use_background_mode:
+            print("使用背景模式執行研究（適合長時間任務）...")
+        else:
+            print("正在執行深度研究，這可能需要幾分鐘時間...\n")
         
         research_start_time = datetime.now()
         
         # 第二階段：執行實際研究
-        final_response = self.client.responses.create(
-            model="o3-deep-research",
-            tools=[
-                {"type": "web_search_preview"},
-                {"type": "code_interpreter", "container": {"type": "auto"}}
-            ],
-            input=research_topic,
-            previous_response_id=response_id
+        final_response = self.create_response(
+            research_topic,
+            previous_response_id=response_id,
+            background=use_background_mode
         )
+        
+        # 如果使用背景模式，需要等待完成
+        if use_background_mode:
+            final_response_id = final_response.get('id')
+            final_response = self.wait_for_completion(final_response_id)
         
         # 記錄原始回應
         self.log_raw_response("Stage 2: Deep Research", research_topic, final_response)
@@ -195,10 +271,11 @@ class ResearchSession:
         research_duration = (research_end_time - research_start_time).total_seconds()
         total_duration = (research_end_time - start_time).total_seconds()
         
-        # 顯示最終研究結果
+        # 提取並顯示最終研究結果
+        final_output_text = self.extract_output_text(final_response)
         print("\n最終研究結果：")
         print("-" * 80)
-        print(final_response.output_text)
+        print(final_output_text)
         print("-" * 80)
         print(f"\n⏱️ 研究執行時間: {research_duration:.2f} 秒")
         print(f"⏱️ 總耗時（含計畫制定）: {total_duration:.2f} 秒")
@@ -208,8 +285,8 @@ class ResearchSession:
             "timestamp": datetime.now(),
             "topic": research_topic,
             "response_id": response_id,
-            "plan": response.output_text,
-            "result": final_response.output_text,
+            "plan": output_text,
+            "result": final_output_text,
             "research_duration_seconds": research_duration,
             "total_duration_seconds": total_duration
         }
@@ -265,12 +342,16 @@ class ResearchSession:
 def print_welcome():
     """顯示歡迎訊息"""
     print("\n" + "=" * 80)
-    print("歡迎使用 O3 Deep Research Interactive App")
+    print("歡迎使用 O3 Deep Research Interactive App (REST API 版本)")
     print("=" * 80)
-    print("\n此應用程式可協助您使用 Azure OpenAI O3 模型進行深度研究。")
+    print("\n此應用程式使用 Azure OpenAI REST API 進行深度研究。")
     print("\n指令說明：")
     print("  - 直接輸入研究主題來開始新的研究")
     print("  - 輸入「離開」或「quit」來結束程式並儲存所有研究結果")
+    print("\n技術特點：")
+    print("  - 使用 REST API 而非 SDK")
+    print("  - 支援背景模式（適合長時間任務）")
+    print("  - 完整的錯誤處理與狀態追蹤")
     print("\n" + "=" * 80 + "\n")
 
 
@@ -297,8 +378,13 @@ def main():
                 print("⚠️ 請輸入有效的研究主題。")
                 continue
             
+            # 詢問是否使用背景模式
+            print("\n是否使用背景模式？（建議用於長時間研究任務）")
+            bg_mode_input = input("輸入 'y' 或 'yes' 使用背景模式，其他則為一般模式: ").strip().lower()
+            use_background = bg_mode_input in ['y', 'yes']
+            
             # 執行研究
-            result = session.conduct_research(user_input)
+            result = session.conduct_research(user_input, use_background_mode=use_background)
             
             if result:
                 print(f"\n✓ 研究完成！已加入到會話記錄中。")
@@ -318,8 +404,7 @@ def main():
         print(f"\n✓ 所有研究結果已儲存至: {output_file}")
         print(f"總共完成 {len(session.research_history)} 筆研究。")
     
-    print("\n感謝使用 O3 Deep Research Interactive App！再見！\n")
-
+    print("\n感謝使用 O3 Deep Research Interactive App (REST API 版本)！再見！\n")
 
 
 if __name__ == "__main__":

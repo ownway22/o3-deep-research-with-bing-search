@@ -1,0 +1,590 @@
+[
+  {
+    "timestamp": "2025-12-05T17:05:24.813329",
+    "stage": "Stage 1: Plan Creation",
+    "input_preview": "請針對以下研究內容，列出詳細的研究計畫與搜尋關鍵字清單，不要執行實際的深度搜索。\n\n研究內容：TSMC最近1年遇到的公開資安問題",
+    "response": {
+      "id": "resp_08c309da7adc339e0069329f089eb08197917d88065266bac3",
+      "created_at": 1764925192.0,
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "metadata": {},
+      "model": "o3-deep-research",
+      "object": "response",
+      "output": [
+        {
+          "id": "rs_08c309da7adc339e0069329f10acb88197842671151cf30402",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f1fbe1c81979d5e1faa4a915088",
+          "action": {
+            "query": "TSMC cybersecurity issues last year 2024",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f20e3c481978064b6bea5bdb513",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f39c40481978c5dd33aa4500489",
+          "action": {
+            "query": "TSMC 2023 LockBit ransomware supplier hack data breach",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f3af2d881978e6fa9865ed1a689",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f3b9afc8197833419064649c5e6",
+          "action": {
+            "type": "open_page",
+            "url": "https://hksar.org/tsmc-confirms-supplier-data-breach-following-ransom-demand-by-russian-speaking-cybercriminal-group"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f3c9b6481979e330e4b0607060b",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f4c3b3c81978980568712d048cd",
+          "action": {
+            "query": "台積電 資安 2024 \r\n\r\n報導 資訊 安全 事件",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f4d694481979f04a42db66fb740",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f5216b48197bbd5a60b6e6944dc",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/two-former-tsmc-employees-arrested"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f53ac408197adfae839416aae4a",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f5b054c8197bd7c436308e3cfff",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.bleepingcomputer.com/news/security/the-biggest-cybersecurity-and-cyberattack-stories-of-2024/"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f5c298c8197b5bba1b0abfb5081",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f5cce8c8197923064571df6481c",
+          "action": {
+            "query": "TSMC hack 2024 TSMC data leak 2024",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f5e081481979d45a8548cf13c5e",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f66be548197aa9cc2adc547c745",
+          "action": {
+            "query": "TSMC hack Chinese hackers 2023",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f67d9408197a34e7fecec676931",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f7452888197ac54de9534bd7349",
+          "action": {
+            "query": null,
+            "type": "find_in_page",
+            "sources": null,
+            "pattern": "July",
+            "url": "https://hksar.org/tsmc-confirms-supplier-data-breach-following-ransom-demand-by-russian-speaking-cybercriminal-group"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f74f8b08197a090f9b6cdf0b25c",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f755d488197b260d4f54817442e",
+          "action": {
+            "type": "open_page",
+            "url": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f7677ec819798ea992a16723421",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f7753e08197881879b964d41ddf",
+          "action": {
+            "query": "TSMC Kinmax 70 million ransom Reuters 2023",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f787af081979325efa536d808bd",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f7e77c08197a89ebb29161d8a7c",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmcs-2nm-leak-is-considered-not-critical-senior-govt-official-says-company-secrets-are-compartmentalized-and-unusable-in-parts"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f7fc9188197bb99b9d505f5b671",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f83192c8197899d33244f559309",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.tomshardware.com/tech-industry/cyber-security/chinese-state-sponsored-cyberattacks-target-taiwan-semiconductor-industry-security-firm-says-motivation-of-three-separate-campaigns-most-likely-espionage"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f84844c8197ad31fa8b272d4292",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f8b239481979cbb7fba334977c4",
+          "action": {
+            "type": "open_page",
+            "url": "https://technode.com/2025/08/30/tsmc-2nm-leak-case-solved-three-suspects-plead-guilty-with-maximum-sentences-of-14-years/"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f8c93ac81978adc9b2a226737c9",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f91d11c819787c38bdea990fc55",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.techinasia.com/news/taiwan-probes-ex-tsmc-executive-over-alleged-intel-secret-leaks"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f9329f081979f922a88040c3608",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329f95e62481979182fdd6c465c3d6",
+          "action": {
+            "query": "TSMC \r\n\r\n2024 cyber attack",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329f97f0288197860af725485f8bf7",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fcd9e308197b8b573c6a59236ed",
+          "action": {
+            "type": "open_page",
+            "url": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fcef1408197b9e5dbd446fe5da0",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fcf6ff48197bc55ca7ee53fb311",
+          "action": {
+            "type": "open_page",
+            "url": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fd032a881978f72e42349b57218",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fd0e75c8197ae558f1486e77cc5",
+          "action": {
+            "type": "open_page",
+            "url": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fd193e48197be8ae3be15ffc77a",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fd29ec08197abf544c409297302",
+          "action": {
+            "type": "open_page",
+            "url": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fd36c7c8197ad9e63803d5c0bec",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fd42df48197b99b0a61f3c7b733",
+          "action": {
+            "query": "TSMC LockBit \r\n\r\n70\r\n\r\u0007",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fd592d48197a82ab22bdb6f1b15",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fd72ec88197bb9bf3a91d7c0b8d",
+          "action": {
+            "query": "台積電 供應商 資安 漏洞\r\n\r\n\r\n 2023",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fd906a081979bbdaaee29f101f3",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fd9b918819782ea9f0d32313857",
+          "action": {
+            "query": "台積電 LockBit 供應商 2023",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fdb49548197840ca2959b9931b9",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fe0892c819793ec09d7bf1273a5",
+          "action": {
+            "query": "台積電 2\r\n\r\n\n\n\n\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\t\n",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329fe1e3f081978fa4de7416e2bfda",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329fed52a08197a652ab55bf4b9314",
+          "action": {
+            "type": "open_page",
+            "url": "https://cybernews.com/cybercrime/tsmc-legal-action-potential-trade-secret-leak-former-employees/"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329feea1d08197a7a8efe25b898f4e",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e0069329ff938bc819795840e1ecc9e2704",
+          "action": {
+            "type": "open_page",
+            "url": "https://news.cts.com.tw/cts/international/202311/202311022247209.html"
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e0069329ffa867c8197a139ced0e9a08648",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e006932a01b302081978e1c2f2d15bb4b10",
+          "action": {
+            "query": "TSMC ex executive Intel leak 2024 Reuters",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e006932a01ca2f48197970168b1515408d6",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "ws_08c309da7adc339e006932a02184488197a9f01c84e9e7136d",
+          "action": {
+            "query": "台積電 \r\nAPT \r\n\r\n\n\n\n\r\n",
+            "type": "search",
+            "sources": null
+          },
+          "status": "completed",
+          "type": "web_search_call"
+        },
+        {
+          "id": "rs_08c309da7adc339e006932a0233d688197971244d1af5f3bf2",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        },
+        {
+          "id": "msg_08c309da7adc339e006932a03f8c908197879a10fff94a7201",
+          "content": [
+            {
+              "annotations": [],
+              "text": "# 研究計畫\n\n1. **確認研究主題與範圍**：首先明確研究的目標是調查「台積電**最近一年**所遭遇的公開資訊安全問題」。定義「最近一年」的時間範圍（例如：從去年某月到今年同月），確保包含所有相關事件。說明研究的重要性：台積電是全球最大的晶圓代工企業，其資訊安全事件可能對半導體產業及供應鏈產生重大影響，因此研究這些事件的發生原因和影響具有意義。\n\n2. **蒐集基礎背景資料**：在深入具體事件前，先了解台積電的公司背景和其資訊安全環境。如有需要，可簡述台積電在全球半導體產業的地位、過去曾發生的重大資安事件（例如2018年的病毒事件）以提供背景。此外，說明半導體產業面臨的常見資安威脅（如**勒索軟體攻擊**、**供應鏈攻擊**、**商業機密外洩**等）為後續研究奠定基礎。\n\n3. **確定主要研究議題**：根據對題目的理解，列出需要重點關注的公開資安問題類型，例如：  \n   - **外部駭客攻擊與資料外洩**：如駭客入侵、惡意軟體或勒索軟體攻擊導致的資料外洩或業務中斷事件。  \n   - **供應鏈資安事件**：如台積電的供應商或合作夥伴遭受攻擊而連帶影響台積電的事件。  \n   - **內部資訊洩漏事件**：包括台積電員工或前員工因洩漏機密資料、商業機密或技術情報而引發的資安事件。  \n   - **其他相關資安事件**：如政府或資安機構公開報告的針對台積電的**APT（高階持續性威脅）攻擊**或網路間諜活動等。  \n   確認這些議題有助於有系統地展開調查。\n\n4. **資料來源與工具**：制定尋找資訊的策略，確定將使用的資料來源與工具：  \n   - **新聞媒體報導**：尋找**國內外媒體**（如中央社、聯合新聞網、自由時報、經濟日報、TechNews、iThome，以及Reuters、Bloomberg、The Register、Cybernews等英文媒體）的相關報導，獲取資安事件的新聞資料和細節。  \n   - **官方新聞稿與報告**：查閱**台積電官方發布**的新聞稿、財報或ESG報告中有無提及資安事件或對策（例如有消息指出台積電在2024年舉辦了供應商資安研討會，加強供應鏈的資訊安全）。  \n   - **專業安全研究報告**：參考資訊安全機構（如Proofpoint、TeamT5、資安研究院等）針對半導體產業或台積電的報告，了解是否有提到台積電遭受APT攻擊或其他資安威脅的狀況。  \n   - **學術資料及評論**：如有相關的期刊論文、研討會報告討論台積電資安事件的影響，或產業專家對這些事件的評論，可作為補充資料。\n\n5. **搜尋與蒐集資料**：運用以上工具，針對各項議題**廣泛搜尋相關關鍵字**（下方提供關鍵字清單）。確保搜尋範圍涵蓋**中文**和**英文**資訊，以獲取完整的事件經過與各方觀點。對於每一起事件：  \n   - **確認事件的時間與經過**：記錄事件發生的時間（確切日期或月份）、事件的起因（如遭受何種攻擊或發現何種漏洞）、以及事發經過。  \n   - **蒐集事件細節**：如攻擊方式（釣魚郵件、惡意軟體、零日漏洞**Zero-Day**等）、攻擊者背景（黑客組織或疑似國家背景）、被竊取或受影響的資料類型（如機密技術資料、員工/客戶資料）、以及對營運造成的影響（例如生產線是否停擺、財務損失金額等）。  \n   - **記錄官方回應**：查找台積電對該事件的官方回應或聲明，瞭解公司如何描述事件影響，以及採取了哪些緊急措施或補救辦法。  \n   - **關注其他相關訊息**：包括政府部門的回應（例如台灣資安單位或主管機關是否介入調查）、拉出相關的法規（如**《國家安全法》**或**營業秘密法**的適用）以及業界對此事件的評論。\n\n6. **整理與分類資料**：將收集到的資訊安全事件按時間順序或類型進行整理。建議**建立一個時間線**（Timeline）列出各個事件，例如：  \n   - *外部攻擊事件*：如 **2023年6月**發生的供應商系統遭**LockBit**勒索軟體攻擊事件（黑客組織要求高額贖金，台積電確認受影響的是供應商的測試環境，營運未受實質影響）。  \n   - *內部資料洩漏事件*：如 **2024-2025年間**揭露的台積電**2奈米製程技術機密洩漏案**（多名現任與前員工涉嫌偷取公司先進製程技術資料，經台積電內部監控發現後舉報，台灣檢方依國安法及營業秘密法起訴相關人員並展開調查）。  \n   - 其他**公開報導**的資安事件按照時間依序列出，確保每個事件都有基本資訊（時間、事件簡述、資訊來源）。  \n   透過分類可以看出台積電在最近一年主要面臨了哪些類型的資安威脅（如來自外部的網絡攻擊 vs. 内部人員的資料外洩）。\n\n7. **深入分析與討論**：在蒐集好事實資料後，進一步分析每起事件的**成因與影響**。例如，討論外部攻擊事件是否反映出**供應鏈資安漏洞**或**企業防護不足**，內部洩密事件是否顯示**內部管控與員工培訓**方面的問題。此外，可以關注這些事件對台積電造成的影響程度（例如金錢損失、產能受影響、市場信心變化等），以及事件對產業安全、國家安全（尤其考量台積電對台灣及全球科技產業的重要性）的含義。\n\n8. **台積電的因應措施**：研究台積電事後採取了哪些行動來加強資訊安全，防止未來類似事件發生。例如：  \n   - **技術措施**：強化資安基礎設施，提升對**供應商**的安全要求（如2024年舉辦供應商資安研討會、推出資安關鍵管控措施），導入新的資安防護技術或工具等。  \n   - **管理與政策**：檢討內部資訊安全政策和員工保密培訓，加強對關鍵技術人員離職的**管理措施**（如簽訂競業禁止協議、加強離職審查），以及與政府單位合作（例如與**國家資通安全會報**合作強化半導體產業資安）。  \n   - **法律行動**：配合政府追查不法行為，對涉案人員或相關企業採取法律行動（如引用國安法對泄密者提告、對失職的外部廠商追究責任）。\n\n9. **整理報告與驗證**：在完成上述步驟後，開始撰寫研究報告。撰寫**報告大綱**，包含：引言（研究背景與目的、台積電為何易受資安威脅）、主要資訊安全事件詳述與分析（依時間或類型分段介紹每個事件及其影響）、台積電的應對措施與改進策略，以及結論（總結過去一年台積電資安問題的趨勢和教訓，並提出建議）。在撰寫時，務必引用和註明**可靠來源**來支持每個事件的事實，並對收集到的資料進行交叉比對確認其準確性。\n\n## 搜尋關鍵字清單\n\n**中文關鍵字：**\n\n- 台積電 資訊安全 事件 / 台積電 資安 事件  \n- 台積電 資安 攻擊 / 台積電 網路攻擊 / 台積電 資安漏洞  \n- 台積電 資料外洩 / 台積電 機密 外流 / 台積電 技術 洩密  \n- 台積電 LockBit 勒索軟體 / 台積電 供應商 資安 / 擎昊科技 資安事件  \n- 台積電 2奈米 洩密 案件 / 台積電 員工 洩漏 機密 / 台積電 國家安全法 洩密  \n- 台積電 前高管 Intel 洩露 / 羅唯仁 台積電 洩密 / 台積電 前員工 機密  \n- 台積電 資安 措施 / 台積電 資安 研討會 / 台積電 資安 強化\n\n**英文關鍵字：**\n\n- TSMC cyber security incidents 2023/2024/2025  \n- TSMC data breach 2023 LockBit ransomware 70 million  \n- TSMC supplier hack Kinmax / TSMC LockBit ransomware attack  \n- TSMC 2nm trade secret leak 2025 / TSMC 2nm security breach  \n- TSMC former employees leak 2nm technology 2025 case  \n- TSMC Intel executive leak allegation / TSMC sues ex-executive Intel trade secrets  \n- TSMC cybersecurity response 2024 supplier security conference / TSMC NICS MOU semiconductor cybersecurity  \n- TSMC espionage Chinese hackers / TSMC APT attack Taiwan semiconductor security",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ],
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "temperature": 1.0,
+      "tool_choice": "auto",
+      "tools": [
+        {
+          "container": {
+            "type": "auto",
+            "file_ids": null,
+            "memory_limit": null
+          },
+          "type": "code_interpreter"
+        },
+        {
+          "type": "web_search_preview",
+          "search_context_size": "medium",
+          "user_location": null
+        }
+      ],
+      "top_p": 1.0,
+      "background": false,
+      "conversation": null,
+      "max_output_tokens": null,
+      "max_tool_calls": 225,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": null,
+      "reasoning": {
+        "effort": "medium",
+        "generate_summary": null,
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "top_logprobs": 0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 50734,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 35654,
+        "output_tokens_details": {
+          "reasoning_tokens": 33152
+        },
+        "total_tokens": 86388
+      },
+      "user": null,
+      "content_filters": null,
+      "store": true
+    }
+  }
+]

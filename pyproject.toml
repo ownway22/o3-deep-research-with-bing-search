@@ -9,8 +9,12 @@ requires-python = ">=3.8"
 dependencies = [
     "openai>=1.0.0",
     "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
 ]
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "main_rest_api"]

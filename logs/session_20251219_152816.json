@@ -1,0 +1,860 @@
+[
+  {
+    "timestamp": "2025-12-19T15:32:08.582090",
+    "stage": "Stage 1: Plan Creation",
+    "input_preview": "請針對以下研究內容，列出詳細的研究計畫與搜尋關鍵字清單，不要執行實際的深度搜索。\n\n研究內容：研究微軟 Ignite 2025 在 AI Agent 相關技術的三大亮點",
+    "response": {
+      "id": "resp_0172cfd57d3ec27c006944febd83b081979372ba92fe3fcb8e",
+      "object": "response",
+      "created_at": 1766129341,
+      "status": "completed",
+      "background": false,
+      "content_filters": null,
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": null,
+      "max_tool_calls": 225,
+      "model": "o3-deep-research",
+      "output": [
+        {
+          "id": "rs_0172cfd57d3ec27c006944fec555f48197a4b8133300cc5a37",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944feee9f288197a62997f10cafb08d",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "Microsoft Ignite 2025 AI agent highlights"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944feefaec88197aa6da0013b736209",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ff415964819794827d7162461d05",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "\"Ignite 2025\" \"Book of News\""
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ff42638c8197b5ba029de6979f68",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ff5d0d588197bc4db09d041ff123",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://blogs.microsoft.com/blog/2025/11/18/from-idea-to-deployment-the-complete-lifecycle-of-ai-on-display-at-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ff5ec09c81978c62da8e9cbfca0d",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ff5f1bc8819796ae6b6f00fa8672",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.devdiscourse.com/article/entertainment/3730590-national-book-trusts-ambitious-plans-to-ignite-a-nationwide-reading-revolution"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ff605d208197a7c3acf32df14d49",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "msg_0172cfd57d3ec27c006944ff6398f88197865615d788bdd4f5",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "# 微軟 Ignite 2025「AI Agent 相關技術三大亮點」研究計畫\n\n## 研究目標\n- **明確研究課題**：瞭解並整理「微軟 Ignite 2025 大會中有關 AI Agent 技術的三大亮點」。這意味著我們要找出該年度 Ignite 大會上，與人工智慧代理（AI Agents）相關的三項最重要的新發展或技術創新，並深入研究其內容、技術細節與意義。  \n- **成果形式**：預期產出一份詳細報告或簡報，說明這三大亮點是什麼、解決了哪些問題、具有哪些創新之處，以及它們對產業或使用者的影響。  \n\n## 研究範圍與重點\n- **活動背景**：了解 Microsoft Ignite 2025 大會的背景資訊，包括舉辦時間、主題重點及大會的重點方向。特別關注本次大會是否強調 AI、AI Agent 或人工智慧助理相關的議題。  \n- **AI Agent 定義**：釐清「AI Agent」或「人工智慧代理」在微軟生態系統中的含義。例如：可能指的是微軟近期推出的 **Copilot** 系列智能助理，或指**自動化 AI 代理人**（autonomous agents）在其技術和產品中的應用。  \n- **亮點篩選**：聚焦所有在 Ignite 2025 發表的**AI Agent 相關技術**，如新的產品、平台或服務，以及重大更新。例如，微軟是否發布了新的 AI agent 平台（如**Agent 365**或類似的 AI 助理整合服務）、**Foundry**（可能是一個開發 AI 模型或代理的平臺）、**AI Agent Framework**、**Microsoft 365 Copilot 相關更新**、**Microsoft Teams 智慧代理**、**工作智能 (Work IQ)** 之類的新概念等。這些都是在初步探查中可能出現的關鍵項目，需作為重點關注對象。  \n\n## 研究步驟\n1. **初步資料收集**：首先閱讀微軟官方對於 Ignite 2025 的**概覽或新聞稿**。特別尋找官方網站、Microsoft 官方部落格（如 Microsoft 官方新聞中心、Azure 部落格、Microsoft Tech Community）上是否有**Ignite 2025**的重點摘要或 *“Book of News”*。這將提供一個權威的整體概況，列出所有主要公告事項，其中可識別出與 AI Agent 技術相關的條目。  \n2. **研討會主題調查**：查看 **Microsoft Ignite 2025 大會的主題演講（keynote）**、議程和影片。如果大會有專門談論 AI Agent 的**主題演講**或**專題討論 (session)**，這些內容很可能揭示了主要亮點。尋找關鍵字如 “AI agent”、“Copilot”、“Autonomous Agents”、“AI Assistant”等出現在演講標題或摘要中，確定相關的演講重點。  \n3. **確定潛在亮點**：綜合官方資訊，列出所有與 AI Agent 技術相關的公告。例如，可能的新產品與服務（如 **Microsoft Agent 365** 或 **Agentic AI 平台**）、與第三方 AI 模型的合作（例如 **Anthropic Claude** 整合至 Azure 或 Microsoft 平臺）、**Microsoft 365 Copilot 新功能**、**Teams 平台引入 AI 助理**、或 **Work IQ** 等新技術概念。從官方來源中提取這些資訊，建立一份初步的候選亮點清單。  \n4. **次級來源驗證**：查找權威**科技媒體**和**技術部落格**對 Microsoft Ignite 2025 的報導與重點解析。閱讀多篇相關文章（如科技新聞網站、產業分析文章、開發者社群貼文）以了解普遍認為的**大會重大亮點**。特別尋找那些明確列出「Ignite 2025 重點」、「Top announcements/hits from Ignite 2025」或「AI Agent 亮點」的文章。記錄各篇文章提到的要點，並比對哪些亮點被多個來源重複提及。  \n5. **整理與篩選**：根據蒐集的資訊，從候選亮點中選出最重要的**三項**。選擇的標準可以包括：**技術創新性**（這項 AI agent 技術帶來前所未有的新功能或突破？）、**影響範圍**（這項技術將影響多少使用者或應用場景？）、**業界反響**（是否獲得多方媒體高度關注與討論）。確保這三大亮點真的是 Ignite 2025 上與 AI Agent 相關技術領域最具代表性的發表。  \n6. **深入研究與分析**：針對選定的三大亮點，各自進行深入研究。對每一項技術或產品：  \n   - **內容與功能**：瞭解該技術是什麼，有何特性、怎麼運作。例如，如果亮點之一是新的 **Agent 365** 平臺，說明它的功能、用途以及如何幫助使用者建立或使用 AI 助理。  \n   - **技術細節**：調查其背後的技術原理，如所使用的 AI 模型（例如 OpenAI GPT-4、Anthropic Claude 等）、架構特點，與現有技術的差異等。  \n   - **應用案例與影響**：蒐集該技術在實際應用中的案例或示範，瞭解它將如何影響企業或開發者的工作流程。例如，如果某亮點是 **Work IQ**，就需要說明這項技術如何提升工作效率、改善商業流程。  \n   - **專家評論**：查閱產業專家的評論或分析，了解他們對這些新 AI Agent 技術的看法、優劣勢評估以及未來展望。在中文的技術社群或國際媒體尋找相關的評論文章，以確保觀點的多元性。  \n7. **資料驗證與交叉比對**：將各來源的資訊進行比對，確保資料的準確性與一致性。對於不同來源的說法進行核實，必要時返回官方資料確認真實性。例如，如果某篇報導提及技術細節，應對照官方文件或 Microsoft 發布的白皮書、技術文檔來驗證。  \n8. **匯總與寫作**：整理蒐集到的信息，歸納出微軟 Ignite 2025 中 AI Agent 相關技術的三大亮點。為每個亮點撰寫說明，包括：該亮點的名稱、內容概述、技術細節、應用場景或範例，以及該亮點的重要性（為何被視為重大創新）。確保**內容結構清晰**，以方便讀者理解。每個亮點可用小標題區分，條理清楚地呈現。  \n9. **附錄與參考**：列出進行研究時參考的資料來源（如官方網站、新聞稿、技術文章連結等），以便讀者進一步閱讀。雖然本次要求不需在計畫中執行深度搜索，但在實際研究時，應保留並記錄參考文獻。\n\n## 搜尋關鍵字清單\n- **英文關鍵字**：  \n  - *“Microsoft Ignite 2025 AI agent highlights”* – 用於搜尋微軟 Ignite 2025 中與 AI Agent 有關的亮點總結或要點。  \n  - *“Microsoft Ignite 2025 top announcements AI”* – 搜尋該大會最重要的發布內容，特別是關於人工智慧的部分。  \n  - *“Microsoft Ignite 2025 AI agents enterprise”* – 找尋有關企業應用 AI 代理技術的新聞或部落格文章。  \n  - *“Microsoft Ignite 2025 Copilot improvements”* – 尋找有關 Microsoft 365 或 Windows Copilot 在 2025 年 Ignite 大會上宣佈的新功能。  \n  - *“Microsoft Ignite 2025 Azure AI Foundry”* – 尋找與「Foundry」這一 AI 開發或代理平臺相關的資訊。  \n  - *“Microsoft Ignite 2025 Agent 365”* – 了解是否有名為 Agent 365 的新產品或服務，以及其相關介紹。  \n  - *“Microsoft Ignite 2025 Anthropic Claude Azure”* – 調查微軟是否宣佈與 Anthropic 合作，將其 AI 模型（如 Claude）整合到 Azure 或其他平臺。  \n  - *“Microsoft Ignite 2025 Teams AI agents”* – 尋找有關 Microsoft Teams 引入 AI Agent 或智能助手功能的消息。  \n  - *“Microsoft Ignite 2025 Unified Microsoft Search AI”* – 搜尋微軟是否推出整合式智慧搜尋或 Agent 幫助企業內部搜尋的解決方案。  \n  - *“Microsoft Ignite 2025 AI Agent platform”* – 瞭解有無宣佈新的 AI Agent 平臺（如提供開發者打造自動化代理的工具）。  \n\n- **中文關鍵字**：  \n  - *「微軟 Ignite 2025 三大亮點 AI」* – 使用中文查詢微軟 Ignite 2025 大會的三大亮點，特別聚焦 AI 技術。  \n  - *「微軟 Ignite 2025 人工智慧 代理 技術」* – 搜尋中文媒體對於 Ignite 2025 中人工智慧代理技術的相關報導。  \n  - *「微軟 Ignite 2025 AI 助理 新功能」* – 找尋中文資訊，瞭解微軟在 Ignite 2025 發表的 AI 助理（如 Copilot）新功能。  \n  - *「Ignite 2025 AI 代理 平臺 Foundry」* – 使用中英文結合關鍵字查詢，有關 Ignite 2025 發表的 Foundry 平臺及其 AI 代理用途。  \n  - *「微軟 365 Copilot Ignite 2025 新發佈」* – 查找中文來源中對 Microsoft 365 Copilot 在 Ignite 2025 公佈的新特性的說明。  \n  - *「微軟 Ignite 2025 人工智慧 研討會 亮點」* – 通用關鍵字查詢，瞭解中文技術社群或媒體對該大會亮點的總結。  \n\n使用上述**搜尋關鍵字**於各大搜尋引擎（如 Google、Bing）以及技術論壇、社群媒體（Twitter、LinkedIn）等平台，可以找到相關資訊。  \n在搜尋過程中，建議優先閱讀**微軟官方發布**（新聞中心文章、官方部落格、產品公告）、以及**知名科技媒體**（如 TechCrunch、The Verge、ZDNet 等）對 Ignite 2025 的綜合報導。此外，也可參考**中文科技媒體**（如 iThome、科技新報、數位時代等）的資訊，獲取中文角度的解析。  \n\n透過以上研究計畫的步驟和關鍵字搜尋，將有助於全面瞭解微軟 Ignite 2025 大會中有關 AI Agent 技術的三大亮點，為後續報告撰寫和分析提供充分的資料基礎。"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": null,
+      "reasoning": {
+        "effort": "medium",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": true,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tools": [
+        {
+          "type": "code_interpreter",
+          "container": {
+            "type": "auto"
+          }
+        },
+        {
+          "type": "web_search_preview",
+          "search_context_size": "medium",
+          "user_location": null
+        }
+      ],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 22752,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 22934,
+        "output_tokens_details": {
+          "reasoning_tokens": 20224
+        },
+        "total_tokens": 45686
+      },
+      "user": null,
+      "metadata": {}
+    }
+  },
+  {
+    "timestamp": "2025-12-19T15:35:36.199007",
+    "stage": "Stage 2: Deep Research",
+    "input_preview": "研究微軟 Ignite 2025 在 AI Agent 相關技術的三大亮點",
+    "response": {
+      "id": "resp_0172cfd57d3ec27c006944ff7d65948197b22e89402071e06d",
+      "object": "response",
+      "created_at": 1766129533,
+      "status": "completed",
+      "background": true,
+      "content_filters": null,
+      "error": null,
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": null,
+      "max_tool_calls": 225,
+      "model": "o3-deep-research",
+      "output": [
+        {
+          "id": "ws_0172cfd57d3ec27c006944ff8dde1c819783adac3df8f6928d",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "site:microsoft.com Ignite 2025 AI Agent technology highlights"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ff8ed14881979924e343760f3fea",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ff9941c48197be9ce327e74608bc",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ff9a64888197a743824ff15e3863",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ff9f90fc8197aade7de8cc472c46",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffa0a4d08197927616388b62c99e",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffa8305c8197bfed968435f18388",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://techcommunity.microsoft.com/discussions/microsoft365copilot/microsoft-ignite-2025-the-dawn-of-the-ai-agent-era/4473260"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffa9ab248197b7104220e3799e94",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffaa29408197ace47f11057cb2f3",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Dawn of the AI-Agent Era",
+            "url": "https://techcommunity.microsoft.com/discussions/microsoft365copilot/microsoft-ignite-2025-the-dawn-of-the-ai-agent-era/4473260"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffaada788197871062139fc45832",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffab31e08197a96af9f2d93688fe",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Key announcements",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffabca2481979f7724d15f9dd11f",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffb067b48197baf2fa6b70be3519",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "\"Book of News\" \"Ignite 2025\""
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffb236d481979f81cd97fa17e93b",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffb3363081978a2cbb845fd63bad",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffb4429c81979f1d899ff3736e7c",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffc369988197a29ba10bb7b0fd25",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "\"three key announcements\" Ignite 2025 agents"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffc473e88197ac58070fa27fdf5d",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffc9216081979085fe76144ac6ec",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "Ignite 2025 \u0015\u0015\u0015 \u0014\u0015\u0015 AI \u0014\u0015\u0015 (Chinese search query meaning Microsoft Ignite 2025 AI Agent highlights)"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffca79888197bbdbf37e53a1850b",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffcb26908197b5892266dc6523ae",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://dynatechconsultancy.com/blog/microsoft-ignite-2025-top-announcements"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffcc7c3c819792bae5fb4129d459",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffcfe8e88197becd4007d0609f0b",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "\"Foundry Agent Service\" Microsoft Ignite 2025"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffd1429881979a2181d5d9b12044",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffe997bc8197a238d5c671c70af2",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": null
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffea5c548197a86d87908bba09f6",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffeabe1c8197becad87a18892c2f",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "The headline strategy is Agent 365",
+            "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffeb5e348197b2b7fbf2d918329f",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffebca948197b7d0e3202b831128",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffece21c8197bda7df94a803a8d9",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944ffee6adc819786fc6600f10f345c",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Microsoft Foundry",
+            "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944ffef43ac8197bb611c70c677f56c",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006944fff6c1488197b55a60bbb0e537fb",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006944fff799f481978af3f2b82b69b921",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006945000110e0819798e55e99fff1d58a",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Agent 365",
+            "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006945000264a88197b720996b91a4ed37",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c0069450009adb0819797c3057e5159816e",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006945000a786081979e8d4e23f07436d3",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006945000d30748197956322b4015e5409",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006945000e0cac81978d42c50bc601d9c2",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006945001002c48197ac77440ebee117bb",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Anthropic Claude models in Foundry",
+            "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c0069450010cc4081978e253705f809a8a2",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c00694500114fbc81979385956a01d3b3e8",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c0069450011faac819781fc38b5f86a745e",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c0069450016254c81979a4257f76d9fd6f7",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "find_in_page",
+            "pattern": "Facilitator agent",
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c0069450016f2608197a02ec9a691c09ffc",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c0069450019491c81979dc54139a9a9f6f9",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://techcommunity.microsoft.com/blog/mvp-blog/rd-perspectives-on-microsoft-ignite-2025-opportunities-shaping-the-next-wave-of-/4479157"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006945001a96c08197a04074ff5e042cbf",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c006945001bc234819787d035d0d0d3d723",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "Ignite 2025 \u0015\u0015 365 \u0015\u0015\u0015 Work IQ Foundry \u0014\u0015\u0015"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006945001d4d0c8197864adc1f124f2485",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c0069450024c3ac8197bca0ae6257f1f596",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "query": "Work IQ \u0015\u0015 Ignite 2025 \u0014\u0015\u0015"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c0069450026356c81978914267feea272f7",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "ws_0172cfd57d3ec27c0069450026c05c8197bcbee34728261270",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/"
+          }
+        },
+        {
+          "id": "rs_0172cfd57d3ec27c006945002825cc8197a8ac401a70b59e85",
+          "type": "reasoning",
+          "summary": []
+        },
+        {
+          "id": "msg_0172cfd57d3ec27c006945002e863c8197a3b1fc1afb2e4c3b",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [
+                {
+                  "type": "url_citation",
+                  "end_index": 334,
+                  "start_index": 138,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=the%20Chatbot%20is%20over%3B%20the,As%20employees%20start%20building"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 914,
+                  "start_index": 686,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 1344,
+                  "start_index": 1116,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 1619,
+                  "start_index": 1422,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=their%20impact%20on%20the%20organization,Microsoft%20also%20announced"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 1948,
+                  "start_index": 1720,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 2244,
+                  "start_index": 2047,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=their%20impact%20on%20the%20organization,Microsoft%20also%20announced"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 2717,
+                  "start_index": 2498,
+                  "title": "Microsoft Ignite 2025: Copilot and agents built to power the Frontier ...",
+                  "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=Try%20Microsoft%20365%20Copilot%20today,3%29.%20The"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3043,
+                  "start_index": 2833,
+                  "title": "Microsoft introduces Work IQ and Fabric IQ, unified intelligence layers ...",
+                  "url": "https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=Microsoft%20is%20introducing%20Work%20IQ%2C,It%20uses%20your%20work"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3257,
+                  "start_index": 3044,
+                  "title": "Microsoft introduces Work IQ and Fabric IQ, unified intelligence layers ...",
+                  "url": "https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=system%20that%20can%20be%20used,Fabric%20iq%20Foundry%20iq%20Microsoft"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3612,
+                  "start_index": 3392,
+                  "title": "Microsoft Ignite 2025: Copilot and agents built to power the Frontier ...",
+                  "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=chart,agent%20grounding%20that%20respects%20existing"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 3988,
+                  "start_index": 3769,
+                  "title": "Microsoft Ignite 2025: Copilot and agents built to power the Frontier ...",
+                  "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=Try%20Microsoft%20365%20Copilot%20today,3%29.%20The"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 4265,
+                  "start_index": 4084,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Actions%3A%20%22One,Router%3A%20A%20new%20tool%20that"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 4583,
+                  "start_index": 4367,
+                  "title": "Microsoft Ignite 2025: Copilot and agents built to power the Frontier ...",
+                  "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=every%20team%2C%20project%2C%20and%20meeting,MCP"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 4828,
+                  "start_index": 4644,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=agent%20now%20gets%20a%20digital,SharePoint%20create%20a"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 5327,
+                  "start_index": 5056,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=for%20your%20product%20strategy,reflects%20Microsoft%E2%80%99s%20strategic%20shift%20to"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 5625,
+                  "start_index": 5361,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=platforms%2C%20and%20a%20dramatically%20expanded,Why%20Microsoft%20Ignite%202025"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 5984,
+                  "start_index": 5726,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 6361,
+                  "start_index": 6103,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 6629,
+                  "start_index": 6430,
+                  "title": "Microsoft Ignite 2025 Recap: Agentic AI, Foundry, and Azure Innovations",
+                  "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=complexity,and%20reads%3A%20Microsoft%20Exec%20talks"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 6953,
+                  "start_index": 6695,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 7311,
+                  "start_index": 7072,
+                  "title": "Foundry Agent Service at Ignite 2025: Simple to Build. Powerful to ...",
+                  "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-deploy-trusted-/4469788#:~:text=,driven%20transformation%20across%20industries"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 7620,
+                  "start_index": 7370,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=gaps%20Foundry%20IQ%20is%20a,SK%20%2B%20AutoGen%2C%20Unified%20The"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 7971,
+                  "start_index": 7727,
+                  "title": "Microsoft introduces Work IQ and Fabric IQ, unified intelligence layers ...",
+                  "url": "https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=meaning%20Operations%20Agent%3A%20autonomous%20agents,across%20data%2C%20apps%2C%20and%20productivity"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 8198,
+                  "start_index": 7972,
+                  "title": "Microsoft introduces Work IQ and Fabric IQ, unified intelligence layers ...",
+                  "url": "https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=Microsoft%20claims%20that%20AI%20agents,agents%20with%20deep%20enterprise%20context"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 8594,
+                  "start_index": 8318,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=into%20Microsoft%20Foundry%20through%20an,matters%20for%20software%20development%20companies"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 9023,
+                  "start_index": 8733,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=lifting%20associated%20with%20retrieval%2C%20orchestration%2C,For%20software%20companies%2C%20this%20means"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 9289,
+                  "start_index": 9024,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=tools%20Enterprise%E2%80%91ready%20coordination%20for%20long%E2%80%91running,This"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 9505,
+                  "start_index": 9306,
+                  "title": "Microsoft Ignite 2025 Recap: Agentic AI, Foundry, and Azure Innovations",
+                  "url": "https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=complexity,and%20reads%3A%20Microsoft%20Exec%20talks"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 9835,
+                  "start_index": 9616,
+                  "title": "Microsoft Ignite 2025: Copilot and agents built to power the Frontier ...",
+                  "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=Try%20Microsoft%20365%20Copilot%20today,3%29.%20The"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 10183,
+                  "start_index": 9955,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 10381,
+                  "start_index": 10184,
+                  "title": "Here is Everything Microsoft Announced at Ignite 2025",
+                  "url": "https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=their%20impact%20on%20the%20organization,Microsoft%20also%20announced"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 10710,
+                  "start_index": 10471,
+                  "title": "Foundry Agent Service at Ignite 2025: Simple to Build. Powerful to ...",
+                  "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-deploy-trusted-/4469788#:~:text=,driven%20transformation%20across%20industries"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 11092,
+                  "start_index": 10834,
+                  "title": "Microsoft Ignite 2025 AI announcements: What software developers need ...",
+                  "url": "https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 11433,
+                  "start_index": 11220,
+                  "title": "Microsoft introduces Work IQ and Fabric IQ, unified intelligence layers ...",
+                  "url": "https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=system%20that%20can%20be%20used,Fabric%20iq%20Foundry%20iq%20Microsoft"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 11678,
+                  "start_index": 11434,
+                  "title": "Microsoft introduces Work IQ and Fabric IQ, unified intelligence layers ...",
+                  "url": "https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=meaning%20Operations%20Agent%3A%20autonomous%20agents,across%20data%2C%20apps%2C%20and%20productivity"
+                }
+              ],
+              "logprobs": [],
+              "text": "# 微軟 Ignite 2025 AI Agent 技術 **三大亮點**\n\n**微軟於 2025 年的 Ignite 大會重點強調「AI 代理」（AI Agents）的創新技術**，發表了一系列將企業與開發者生態系統轉向 *「代理驅動」（agentic）* 時代的重要更新 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=the%20Chatbot%20is%20over%3B%20the,As%20employees%20start%20building))。其中**三大亮點**包括：引入企業級 AI 代理**管理平台「Agent 365」**、推出**全新的智慧層「Work IQ」**搭配 Microsoft 365 Copilot 的升級，以及發表**統一的 AI 開發平臺「Microsoft Foundry」** (及多模型支持)。這三項創新共同構築出微軟的 AI 代理技術藍圖，讓 AI 助手從單純的對話工具躍升為具備**自主行動**、**上下文理解**、**跨系統協作**的企業級智能代理。\n\n## 1. Agent 365 — 企業 AI 代理的**統合管理與安全控制**平臺  \n**Agent 365** 是微軟在 Ignite 2025 上推出的新一代**AI 代理控制平臺**，主要用於**發現、管理並保護**企業內的各種 AI 代理 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees))。當愈來愈多員工在不同部門自行建立自動化 bot 時，企業面臨所謂的 **「Shadow AI」** 挑戰（難以掌控未經管理的私自開發 AI 工具）。**Agent 365** 正是微軟給出的解決方案。這個平臺提供**集中式的代理資料庫（Central Agent Registry）**，詳列公司內所有 AI 代理（包括員工私自建立的「隱形代理」）的相關資訊，如**代理創建者、用途及存取的資料**等 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees))。每個 AI 代理都會獲得**獨立的「Agent ID」識別**（由 Microsoft Entra 提供數位身分），確保代理只能讀取和操作其被授權的資料 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=their%20impact%20on%20the%20organization,Microsoft%20also%20announced))。此外，Agent 365 內建了**企業級的治理與風險管控**機制，IT 管理員可以透過**儀表板**監控所有 AI 代理的活動、效能與系統關聯性，甚至可對違規或行為異常的代理實施*隔離*或*關閉* ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees))。Agent 365 與**Microsoft Defender**、**Microsoft Purview** 等安全與合規服務深度整合，可為 AI 代理賦予與人類用戶相同等級的安全性與合規審計 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=their%20impact%20on%20the%20organization,Microsoft%20also%20announced))。總的來說，**Agent 365** 為企業引入 AI 代理提供了一個**統一的管控中樞**，協助企業在享受 AI 代理帶來的自動化與生產力提升的同時，確保這些代理受控且安全合規。\n\n## 2. **Work IQ 與 Microsoft 365 Copilot 智能代理升級**  \n**Work IQ** 是微軟在 Ignite 2025 發表的一項全新**智慧層（intelligence layer）**技術，也是 Microsoft 365 Copilot 能夠深度了解使用者及企業上下文的核心 ([www.microsoft.com](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=Try%20Microsoft%20365%20Copilot%20today,3%29.%20The))。Work IQ 利用使用者的工作數據、個人習慣與 AI 推理，構建出企業**專屬的知識圖譜與記憶體系**。它會從使用者的郵件、文件、會議紀錄、聊天室等**組織內部資料**中學習，同時記錄使用者的**工作風格、偏好與工作關係**等 ([www.neowin.net](https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=Microsoft%20is%20introducing%20Work%20IQ%2C,It%20uses%20your%20work)) ([www.neowin.net](https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=system%20that%20can%20be%20used,Fabric%20iq%20Foundry%20iq%20Microsoft))。有了這層智慧加持，Microsoft 365 Copilot 的 AI 助理對使用者的理解能力大幅提升，能自動結合工作脈絡提供更貼合需求的協助與建議。例如，Copilot 能夠根據使用者的提問自動**推薦適合的代理**來處理任務，並透過持續的使用回饋來優化未來的回應 ([www.microsoft.com](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=chart,agent%20grounding%20that%20respects%20existing))。  \n\n在應用層面，微軟也為 Office 應用導入了**「代理模式」（Agent Mode）**及**專屬 AI 代理**。使用者現在可以在 **Word、Excel、PowerPoint** 等 Office 應用中啟用 Copilot 的代理模式，透過類似聊天的方式互動式地生成高品質的文件、試算表與簡報 ([www.microsoft.com](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=Try%20Microsoft%20365%20Copilot%20today,3%29.%20The))。例如，使用者可以在 Excel 中以自然語言請 Copilot 撰寫 Python 程式碼進行資料分析，或在 PowerPoint 中讓 AI 代理依據提示自動產出帶有企業品牌風格的投影片 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=Actions%3A%20%22One,Router%3A%20A%20new%20tool%20that))。此外，在 **Microsoft Teams** 中，微軟推出了**「協作助理」（Facilitator Agent）**，可在會議中充當虛擬同事：自動**整理議程、擷取重點**、記錄與追蹤會議決議等 ([www.microsoft.com](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=every%20team%2C%20project%2C%20and%20meeting,MCP))。這些垂直領域的**內建AI代理**（如行銷銷售代理、員工培訓代理、SharePoint 內容建立代理等）也在大會中亮相 ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=agent%20now%20gets%20a%20digital,SharePoint%20create%20a))。透過 Work IQ 的加持，這些 AI 代理能充分瞭解企業內部的知識與脈絡，提供更聰明且個人化的**生產力工具和協作體驗**。\n\n## 3. **Microsoft Foundry — 新一代 AI 代理開發與多模型平臺**  \n**Microsoft Foundry** 是 Ignite 2025 上正式亮相的**統一 AI 開發平臺**，前身為 Azure AI Foundry，現整合為一個全面的**企業級 AI 代理開發、部署與管理**平台 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=for%20your%20product%20strategy,reflects%20Microsoft%E2%80%99s%20strategic%20shift%20to))。Foundry 的使命是成為 **“打造智慧代理的核心平臺”** ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=platforms%2C%20and%20a%20dramatically%20expanded,Why%20Microsoft%20Ignite%202025))。在 Foundry 中，開發者和企業能利用**模型路由器（Model Router）**智慧選擇最適合任務的 AI 模型來執行特定工作，目前已支援超過 **11,000** 種模型，以兼顧效能與成本 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of))。一項重大創新是微軟攜手 OpenAI 以外的合作夥伴 —— **Anthropic** 公司，將其先進的大型語言模型 **Claude**（Sonnet 4.5、Opus 4.1、Haiku 4.5 等版本）引入 Foundry 平台 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of))。**Azure 也因此成為當前唯一同時支援 OpenAI GPT 系列模型和 Anthropic Claude 模型的雲服務提供商** ([azure.microsoft.com](https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=complexity,and%20reads%3A%20Microsoft%20Exec%20talks))。這種**多模型併存**的策略為開發者帶來更大的靈活性，可以根據應用需求選擇或讓系統自動分配最適合的模型，實現更佳的效能與成本平衡 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of))。  \n\n除了模型選擇方面的提升，Microsoft Foundry 還內建多項針對 AI 代理的全新開發工具與服務。例如 **Foundry Agent Service** 讓開發團隊可以更輕鬆地**建立、部署並大規模擴展**智能代理 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-deploy-trusted-/4469788#:~:text=,driven%20transformation%20across%20industries))；**Foundry Control Plane** 提供橫跨不同環境與框架的**代理治理**與**集中監控**功能 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=gaps%20Foundry%20IQ%20is%20a,SK%20%2B%20AutoGen%2C%20Unified%20The))；而 **Foundry IQ** 作為**知識檢索引擎**，能從多種資料來源（如 Work IQ、Fabric IQ、Azure 資料服務、甚至網路資訊）擷取有用知識為 AI 代理執行**語意檢索與情境**理解 ([www.neowin.net](https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=meaning%20Operations%20Agent%3A%20autonomous%20agents,across%20data%2C%20apps%2C%20and%20productivity)) ([www.neowin.net](https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=Microsoft%20claims%20that%20AI%20agents,agents%20with%20deep%20enterprise%20context))。透過 Foundry，開發者可以將自行建置的 AI 代理**一鍵發佈**到 Microsoft 365 應用或 Teams，快速觸及數億計的終端使用者，同時透過 Microsoft Admin Center 統一管理這些代理的權限與佈署 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=into%20Microsoft%20Foundry%20through%20an,matters%20for%20software%20development%20companies))。總而言之，**Microsoft Foundry** 標誌著微軟在 AI 代理開發領域的重大進展 — 它將原本分散的 AI 模型、工具和代理框架整合在一起，並提供從**模型選擇、知識供給、治理監控到部署發行**的一站式方案，全面加速並簡化企業開發與運營 AI 智能代理的步伐 ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=lifting%20associated%20with%20retrieval%2C%20orchestration%2C,For%20software%20companies%2C%20this%20means)) ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=tools%20Enterprise%E2%80%91ready%20coordination%20for%20long%E2%80%91running,This))。\n\n### 參考資料\n\n1.  ([azure.microsoft.com](https://azure.microsoft.com/en-us/blog/actioning-agentic-ai-5-ways-to-build-with-news-from-microsoft-ignite-2025/#:~:text=complexity,and%20reads%3A%20Microsoft%20Exec%20talks))Azure Blog – *“Actioning agentic AI: 5 ways to build with news from Microsoft Ignite 2025”*, 2025.12.10.  \n2.  ([www.microsoft.com](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/#:~:text=Try%20Microsoft%20365%20Copilot%20today,3%29.%20The))Microsoft 365 官方部落格 – *“Microsoft Ignite 2025: Copilot and agents built to power the Frontier Firm”*, 2025.11.18.  \n3.  ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=with%20Agent%20365%2C%20a%20control,including%20%E2%80%9Cshadow%20agents%E2%80%9C%20that%20employees)) ([www.theneuron.ai](https://www.theneuron.ai/explainer-articles/here-is-everything-microsoft-announced-at-ignite-2025#:~:text=their%20impact%20on%20the%20organization,Microsoft%20also%20announced))The Neuron – *“Here is Everything Microsoft Announced at Ignite 2025”*, 2025.11.18.  \n4.  ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-deploy-trusted-/4469788#:~:text=,driven%20transformation%20across%20industries))Microsoft Tech Community – *“Foundry Agent Service at Ignite 2025: Simple to Build. Powerful to Scale.”*, 2025.11.21.  \n5.  ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/marketplace-blog/microsoft-ignite-2025-ai-announcements-what-software-developers-need-to-know/4477320#:~:text=There%20are%20two%20major%20updates,means%3A%20Access%20to%20hundreds%20of))Microsoft Tech Community – *“Microsoft Ignite 2025 AI announcements: What software developers need to know”*, 2025.12.11.  \n6.  ([www.neowin.net](https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=system%20that%20can%20be%20used,Fabric%20iq%20Foundry%20iq%20Microsoft)) ([www.neowin.net](https://www.neowin.net/news/microsoft-introduces-work-iq-and-fabric-iq-unified-intelligence-layers-for-agentic-ai/#:~:text=meaning%20Operations%20Agent%3A%20autonomous%20agents,across%20data%2C%20apps%2C%20and%20productivity))Neowin – *“Microsoft introduces Work IQ and Fabric IQ, unified intelligence layers for agentic AI”*, 2025.11.18."
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "previous_response_id": "resp_0172cfd57d3ec27c006944febd83b081979372ba92fe3fcb8e",
+      "prompt_cache_key": null,
+      "prompt_cache_retention": null,
+      "reasoning": {
+        "effort": "medium",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": true,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tools": [
+        {
+          "type": "code_interpreter",
+          "container": {
+            "type": "auto"
+          }
+        },
+        {
+          "type": "web_search_preview",
+          "search_context_size": "medium",
+          "user_location": null
+        }
+      ],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 40096,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 17996,
+        "output_tokens_details": {
+          "reasoning_tokens": 15552
+        },
+        "total_tokens": 58092
+      },
+      "user": null,
+      "metadata": {}
+    }
+  }
+]

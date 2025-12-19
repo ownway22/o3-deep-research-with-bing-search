@@ -20,20 +20,36 @@
 ```
 o3-deep-research-with-bing-search/
 │
-├── main.py                          # 主程式：互動式研究應用程式
+├── main.py                          # 主程式：SDK 版本互動式應用程式
+├── main_rest_api.py                 # REST API 版本互動式應用程式
 ├── pyproject.toml                   # Python 專案配置檔案
 ├── uv.lock                          # UV 套件管理鎖定檔案
 ├── .env                             # 環境變數配置（包含 Azure OpenAI 金鑰）
-│
 ├── output/                          # 研究結果輸出資料夾
-│   ├── o3-deep-research-session_*.md     # Session 研究報告
-│   ├── o3-deep-research-result_*.md      # 單次研究結果
-│   └── o3-deep-research-result_*_中文.md # 中文翻譯報告
-│
+├── logs/                            # API 日誌資料夾（REST API 版本專用）
 ├── .venv/                           # Python Virtual Environment（由 UV 建立）
+├── squence_diagram/                 # 系統架構與流程圖
+│   ├── o3-deep-research-web-search-sequence.md    # Sequence Diagram (Markdown 格式)
+│   └── o3-deep-research-web-search-sequence.html  # Sequence Diagram (HTML 離線版)
 │
 └── o3_deep_research_with_bing_search.egg-info/  # 套件資訊（自動產生）
 ```
+
+## 🔍 系統運作邏輯
+
+如果您想深入了解 O3 Deep Research 與 Web Search 的完整互動流程，請參考：
+
+📊 **Sequence Diagram（互動流程圖）**：
+- 線上瀏覽：[o3-deep-research-web-search-sequence.md](squence_diagram/o3-deep-research-web-search-sequence.md)
+- 離線觀看：下載 [o3-deep-research-web-search-sequence.html](squence_diagram/o3-deep-research-web-search-sequence.html) 並用瀏覽器開啟
+
+Sequence Diagram 詳細說明了：
+- 使用者、Python 應用程式、Azure OpenAI API 與 Bing Search 之間的互動流程
+- 多步驟推理循環的完整過程
+- Web Search 呼叫機制（search、open_page、find_in_page）
+- 背景模式執行與狀態查詢機制
+- Response 結構與引用標註處理
+- 最佳實踐與成本控制建議
 
 ## 🚀 快速開始
 
@@ -47,7 +63,7 @@ o3-deep-research-with-bing-search/
 
 1. **Clone 專案**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ownway22/o3-deep-research-with-bing-search
    cd o3-deep-research-with-bing-search
    ```
 
@@ -66,19 +82,74 @@ o3-deep-research-with-bing-search/
 
 ### 執行應用程式
 
+**Python SDK 版本**：
 ```bash
 uv run python main.py
 ```
 
+**REST API 版本**：
+```bash
+uv run python main_rest_api.py
+```
+
+## 🔄 Python SDK vs REST API 版本比較
+
+本專案提供兩種實作方式，您可以根據需求選擇適合的版本：
+
+### 版本差異對照表
+
+| 特性 | SDK 版本 ([main.py](main.py)) | REST API 版本 ([main_rest_api.py](main_rest_api.py)) |
+|-----|-------------------------------|--------------------------------------------------|
+| **依賴套件** | `openai` SDK | `requests` |
+| **API 呼叫方式** | `client.responses.create()` | `requests.post()` + JSON |
+| **背景模式支援** | ❌ 不支援 | ✅ 支援 (適合長時間任務) |
+| **狀態查詢** | ❌ 無 | ✅ 可查詢背景任務進度 |
+| **超時控制** | SDK 預設值 | ⏱️ 30 分鐘可自訂 |
+| **錯誤處理** | SDK 內建 | 手動實作（更細緻） |
+| **學習曲線** | 簡單易用 | 需了解 REST API 規範 |
+| **適用場景** | 快速原型開發、簡單研究 | 長時間深度研究、生產環境 |
+
+### 何時使用 SDK 版本？
+
+- ✅ 快速開始與原型開發
+- ✅ 不需要背景模式執行
+- ✅ 偏好簡潔的程式碼
+- ✅ 研究時間在 5 分鐘以內
+
+### 何時使用 REST API 版本？
+
+- ✅ 需要長時間執行（超過 5 分鐘）
+- ✅ 需要背景模式與狀態追蹤
+- ✅ 需要精細控制超時時間
+- ✅ 部署到生產環境
+- ✅ 與其他系統整合（Webhook、非同步處理）
+
+### REST API 版本額外功能
+
+1. **背景模式執行**
+   - 適合長時間研究任務（超過 30 分鐘）
+   - 避免 HTTP 連線超時問題
+   - 可定期查詢任務進度
+
+2. **狀態查詢機制**
+   - 即時追蹤研究進度
+   - 掌握任務執行狀態（進行中、已完成、失敗）
+   - 適合建立監控儀表板
+
+3. **自訂超時設定**
+   - 預設 30 分鐘超時
+   - 可根據需求調整
+   - 更靈活的錯誤處理
+
 ## 💡 使用說明
 
-### 基本操作流程
+### 基本操作流程（SDK 版本）
 
 1. **啟動程式**：執行 `uv run python main.py`
 
 2. **輸入研究主題**：根據提示輸入您要研究的主題
    ```
-   請輸入研究主題: 分析 TSMC 在過去一年面臨的 IT 風險
+   請輸入研究主題: 研究微軟 Ignite 2025 在 AI Agent 相關技術的三大亮點
    ```
 
 3. **審核研究計畫**：系統會先產生研究計畫與搜尋關鍵字
@@ -89,6 +160,41 @@ uv run python main.py
 4. **執行 Deep Research**：系統會進行 Web Search、資料分析並產生完整報告
 
 5. **繼續或結束**：
+   - 繼續輸入新主題進行下一輪研究
+   - 輸入「離開」或「quit」結束程式並自動儲存所有結果
+
+### 基本操作流程（REST API 版本）
+
+1. **啟動程式**：執行 `uv run python main_rest_api.py`
+
+2. **輸入研究主題**：根據提示輸入您要研究的主題
+   ```
+   請輸入研究主題: 研究微軟 Ignite 2025 在 AI Agent 相關技術的三大亮點
+   ```
+
+3. **選擇執行模式**：
+   ```
+   是否使用背景模式？（建議用於長時間研究任務）
+   輸入 'y' 或 'yes' 使用背景模式，其他則為一般模式:
+   ```
+   - **一般模式**：同步等待結果（適合快速研究）
+   - **背景模式**：非同步執行，系統會定期輪詢狀態（適合長時間研究）
+
+4. **審核研究計畫**：系統會先產生研究計畫與搜尋關鍵字
+   - 輸入「確認」或「OK」：繼續執行深度研究
+   - 輸入修改建議：系統會根據回饋調整計畫
+   - 輸入「取消」：放棄本次研究
+
+5. **執行深度研究**：
+   - **一般模式**：等待 API 回應（最多 30 分鐘）
+   - **背景模式**：系統每 10 秒查詢一次狀態，直到完成
+
+6. **查看結果與日誌**：
+   - 研究結果會顯示在終端
+   - 完整的 API 回應記錄在 `logs/session_YYYYMMDD_HHMMSS.json`
+   - 可檢視所有 Web Search 查詢與來源連結
+
+7. **繼續或結束**：
    - 繼續輸入新主題進行下一輪研究
    - 輸入「離開」或「quit」結束程式並自動儲存所有結果
 
@@ -104,48 +210,50 @@ uv run python main.py
   - 個別研究主題的詳細分析
   - 包含引用來源與 Timestamp
 
-## 🛠️ 技術架構
-
-### 核心技術
-
 - **Azure OpenAI O3 Deep Research Model**：提供 Deep Research 與推理能力
-- **Bing Search Preview**：取得最新網路資訊
-- **Code Interpreter**：執行資料分析與視覺化任務
-
-### 主要套件
-
-| 套件 | 版本 | 用途 |
-|------|------|------|
-| `openai` | ≥1.0.0 | Azure OpenAI SDK |
-| `python-dotenv` | ≥1.0.0 | 環境變數管理 |
-
-### 程式架構
-
+**SDK 版本 (main.py)**：
 ```python
 ResearchSession (類別)
 ├── __init__()              # 初始化 OpenAI Client
 ├── conduct_research()      # 執行完整研究流程
 │   ├── 階段 1: 建立研究計畫（支援迭代修改）
 │   └── 階段 2: 執行 Deep Research
+├── log_raw_response()      # 記錄原始回應
+├── inspect_web_search_queries()  # 檢查 Web Search
 └── save_all_results()      # 儲存所有研究結果
+```
+
+**REST API 版本 (main_rest_api.py)**：
+```python
+ResearchSession (類別)
+├── __init__()              # 初始化 API 連線資訊
+├── create_response()       # 呼叫 REST API 建立研究
+├── get_response_status()   # 查詢背景任務狀態
+├── wait_for_completion()   # 等待背景任務完成
+├── conduct_research()      # 執行完整研究流程
+│   ├── 階段 1: 建立研究計畫（支援迭代修改）
+│   └── 階段 2: 執行 Deep Research（支援背景模式）
+├── extract_output_text()   # 從 JSON 提取文字輸出
+├── log_raw_response()      # 記錄原始回應到 JSON
+└── inspect_web_search_queries()  # 檢查 Web Search 查詢
 ```
 
 ## 📊 使用範例
 
-### 範例一：科技公司 IT 風險分析
+### 範例一：微軟 Ignite 2025 AI Agent 技術研究
 
 **輸入主題**：
 ```
-分析 TSMC 在過去一年面臨的 IT 風險
+研究微軟 Ignite 2025 在 AI Agent 相關技術的三大亮點
 ```
 
 **輸出內容**：
-- State-Sponsored Cyber Espionage（國家級網路間諜威脅）
-- Ransomware 與網路犯罪攻擊
-- Third-Party & Supply Chain Vulnerabilities（供應鏈漏洞）
-- Insider Threats 與 Trade Secret Leaks（內部威脅）
-- Operational Disruptions（營運中斷）
-- 詳細的事件案例與資料來源引用
+- Azure AI Foundry 與 Agent 開發平台的重大更新
+- Multi-Agent Orchestration 與協作框架
+- Autonomous Agents 的企業級應用場景
+- AI Agent 安全性與治理機制
+- 與 GitHub Copilot 和 Microsoft 365 的整合
+- 詳細的技術規格與實作案例引用
 
 ### 範例二：市場趨勢研究
 
@@ -162,7 +270,7 @@ ResearchSession (類別)
 
 ## ⚙️ 進階設定
 
-### 修改模型參數
+### 修改模型參數（SDK 版本）
 
 編輯 `main.py` 中的 `client.responses.create()` 參數：
 
@@ -176,6 +284,45 @@ response = self.client.responses.create(
     input=research_topic,
     # 可添加其他參數如 temperature, max_tokens 等
 )
+```
+
+### 修改 REST API 參數（REST API 版本）
+
+編輯 `main_rest_api.py` 中的 `create_response()` 方法：
+
+```python
+payload = {
+    "model": "o3-deep-research",
+    "background": background,  # 背景模式開關
+    "tools": [
+        {"type": "web_search_preview"},
+        {"type": "code_interpreter", "container": {"type": "auto"}}
+    ],
+    "input": input_text,
+    # 可添加 max_tool_calls, webhook 等參數
+}
+```
+
+### 調整超時設定（REST API 版本）
+
+在 `create_response()` 方法中修改 timeout 參數：
+
+```python
+response = requests.post(
+    self.base_url,
+    headers=headers,
+    json=payload,
+    timeout=1800  # 30 分鐘超時（秒），可依需求調整
+)
+```
+
+### 調整背景模式輪詢間隔（REST API 版本）
+
+在 `wait_for_completion()` 方法中修改：
+
+```python
+# 等待一段時間後再次查詢
+time.sleep(10)  # 預設 10 秒，可調整為 5-30 秒
 ```
 
 ### 自訂輸出格式
@@ -241,11 +388,36 @@ A: 請檢查 `.env` 檔案中的 `AZURE_OPENAI_API_KEY` 與 `AZURE_OPENAI_ENDPOI
 
 **Q3: 研究執行時間過長**
 
-A: O3 Deep Research 模型執行 Deep Research 需要較長時間（通常 1-5 分鐘），請耐心等候。若超過 10 分鐘可能是網路問題，建議重新執行。
+A: O3 Deep Research 模型執行 Deep Research 需要較長時間（通常 1-5 分鐘）。
+- **SDK 版本**：同步等待，最長等待時間取決於 SDK 預設值
+- **REST API 版本**：
+  - 一般模式：最長等待 30 分鐘
+  - 背景模式：建議用於超過 5 分鐘的研究，可避免超時問題
+
+**Q3-1: 如何選擇是否使用背景模式？**
+
+A: 使用 REST API 版本時：
+- 選擇「一般模式」：適合預期 5-10 分鐘內完成的研究
+- 選擇「背景模式」：適合複雜主題、需要超過 10 分鐘的深度研究
+- 背景模式會每 10 秒顯示當前狀態，方便追蹤進度
 
 **Q4: 輸出檔案中文顯示為亂碼**
 
 A: 確保使用支援 UTF-8 編碼的文字編輯器開啟 Markdown 檔案（如 VS Code、Notepad++）。
+
+**Q5: REST API 版本和 SDK 版本可以共存嗎？**
+
+A: 可以！兩個版本使用相同的 `.env` 配置和 `output/` 資料夾，但產生的檔案會有不同的標題標記。您可以根據需求選擇使用哪個版本。
+
+**Q6: 如何查看 REST API 的詳細日誌？**
+
+A: REST API 版本會在 `logs/` 資料夾中產生 JSON 格式的完整日誌，包含：
+- 每個 API 請求的完整內容
+- 每個 API 回應的完整 JSON
+- 所有 Web Search 查詢記錄
+- 時間戳記與階段標記
+
+這些日誌可用於除錯和分析 API 呼叫細節。
 
 ## 📚 參考資源
 
