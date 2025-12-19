@@ -18,21 +18,14 @@
 ## 📁 專案結構
 
 ```
-o3-deep-research-with-bing-search/
-│
-├── main.py                          # 主程式：SDK 版本互動式應用程式
-├── main_rest_api.py                 # REST API 版本互動式應用程式
-├── pyproject.toml                   # Python 專案配置檔案
-├── uv.lock                          # UV 套件管理鎖定檔案
-├── .env                             # 環境變數配置（包含 Azure OpenAI 金鑰）
-├── output/                          # 研究結果輸出資料夾
-├── logs/                            # API 日誌資料夾（REST API 版本專用）
-├── .venv/                           # Python Virtual Environment（由 UV 建立）
-├── squence_diagram/                 # 系統架構與流程圖
-│   ├── o3-deep-research-web-search-sequence.md    # Sequence Diagram (Markdown 格式)
-│   └── o3-deep-research-web-search-sequence.html  # Sequence Diagram (HTML 離線版)
-│
-└── o3_deep_research_with_bing_search.egg-info/  # 套件資訊（自動產生）
+.
+├── main.py              # SDK 版本主程式 (適合快速原型)
+├── main_rest_api.py     # REST API 版本主程式 (支援背景執行)
+├── output/              # 自動產生的研究報告 (.md)
+├── logs/                # REST API 執行日誌 (.json)
+├── squence_diagram/     # 系統運作流程圖
+├── .env                 # API 金鑰與環境設定
+└── pyproject.toml       # 專案依賴與配置
 ```
 
 ## 🔍 系統運作邏輯
@@ -107,22 +100,7 @@ uv run python main_rest_api.py
 | **超時控制** | SDK 預設值 | ⏱️ 30 分鐘可自訂 |
 | **錯誤處理** | SDK 內建 | 手動實作（更細緻） |
 | **學習曲線** | 簡單易用 | 需了解 REST API 規範 |
-| **適用場景** | 快速原型開發、簡單研究 | 長時間深度研究、生產環境 |
-
-### 何時使用 SDK 版本？
-
-- ✅ 快速開始與原型開發
-- ✅ 不需要背景模式執行
-- ✅ 偏好簡潔的程式碼
-- ✅ 研究時間在 5 分鐘以內
-
-### 何時使用 REST API 版本？
-
-- ✅ 需要長時間執行（超過 5 分鐘）
-- ✅ 需要背景模式與狀態追蹤
-- ✅ 需要精細控制超時時間
-- ✅ 部署到生產環境
-- ✅ 與其他系統整合（Webhook、非同步處理）
+| **建議使用時機** | • 快速開始與原型開發<br>• 不需要背景模式執行<br>• 偏好簡潔的程式碼<br>• 研究時間在 5 分鐘以內 | • 需要長時間執行（> 5 分鐘）<br>• 需要背景模式與狀態追蹤<br>• 需要精細控制超時時間<br>• 部署到生產環境<br>• 與其他系統整合 |
 
 ### REST API 版本額外功能
 
@@ -211,6 +189,7 @@ uv run python main_rest_api.py
   - 包含引用來源與 Timestamp
 
 - **Azure OpenAI O3 Deep Research Model**：提供 Deep Research 與推理能力
+
 **SDK 版本 (main.py)**：
 ```python
 ResearchSession (類別)
@@ -350,29 +329,6 @@ f.write(f"# O3 Deep Research Session Report\n\n")
    ```
 
 3. **金鑰輪替**：定期更新 Azure OpenAI API Key
-
-## 📝 專案配置檔案說明
-
-### pyproject.toml
-
-```toml
-[project]
-name = "o3-deep-research-with-bing-search"
-version = "0.1.0"
-description = "O3 Deep Research with Bing Search using Azure OpenAI"
-authors = [
-    {name = "Yu-Hong Lin", email = "your.email@example.com"}
-]
-requires-python = ">=3.8"
-dependencies = [
-    "openai>=1.0.0",
-    "python-dotenv>=1.0.0",
-]
-
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-```
 
 ## 🐛 疑難排解
 
